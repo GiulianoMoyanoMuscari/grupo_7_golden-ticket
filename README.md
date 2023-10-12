@@ -13,6 +13,6 @@ Adolescentes y adultos amantes de la música mayores de 16
 
 * María Fernanda Zurita Bravo: 
 * Jhonatan Jamir Abdala: 31 años, Santiago Del Estero - Argentina.
-* Giuliano Ezequiel Moyano Muscari:
+* Giuliano Ezequiel Moyano Muscari: 23 años, Fernández, Santiago del Estero - Argentina. [@GiulianoMoyanoMuscari](https://github.com/GiulianoMoyanoMuscari)
 * Juan Ignacio Carrizo:
 * Juan Cruz Venier Rojas:
