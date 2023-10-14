@@ -17,4 +17,4 @@ Adolescentes y adultos amantes de la música mayores de 16
 * Jhonatan Jamir Abdala: 31 años, Santiago Del Estero - Argentina.
 * Giuliano Ezequiel Moyano Muscari: 23 años, Fernández, Santiago del Estero - Argentina. [@GiulianoMoyanoMuscari](https://github.com/GiulianoMoyanoMuscari)
 * Juan Ignacio Carrizo:
-* Juan Cruz Venier Rojas:
+* Juan Cruz Venier Rojas: 24 años. Iniciando en la programación. Santiago del Estero, Capital. 
