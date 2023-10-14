@@ -1,5 +1,7 @@
 # Golden Ticket
 
+**Golden Ticket** es un eCommerce especializado en la venta de entradas para eventos, con un enfoque principal en eventos de música. Nos esforzamos por ofrecer a los amantes de la música una experiencia de compra de entradas fácil y confiable, brindando acceso a los mejores y mas emocionantes eventos en la industria de la música.
+
 ### ¿Qué productos o servicios brindará nuestro sitio?
 Venta de tickets para recitales
 
