@@ -13,7 +13,7 @@ Adolescentes y adultos amantes de la música mayores de 16
 
 ## Integrantes
 
-* María Fernanda Zurita Bravo: 
+* María Fernanda Zurita Bravo: 20 años, La Banda, Santiago Del Estero - Argentina 
 * Jhonatan Jamir Abdala: 31 años, Santiago Del Estero - Argentina.
 * Giuliano Ezequiel Moyano Muscari: 23 años, Fernández, Santiago del Estero - Argentina. [@GiulianoMoyanoMuscari](https://github.com/GiulianoMoyanoMuscari)
 * Juan Ignacio Carrizo:
