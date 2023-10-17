@@ -11,6 +11,14 @@ Adolescentes y adultos amantes de la música mayores de 16
 ### ¿Cómo ajustaremos nuestra oferta a ese público?
 ¡Somos los únicos en el mercado que te ofrece a tus artistas favoritos al mejor precio!
 
+## Referentes
+
+✔ [Allaccess](https://www.allaccess.com.ar/)
+✔ [Alpogo](https://alpogo.com/)
+✔ [Ticketek](https://www.ticketek.com.ar/)
+✔ [Tuentrada](https://www.tuentrada.com/)
+✔ [Entradauno](https://www.entradauno.com/)
+
 ## Integrantes
 
 * María Fernanda Zurita Bravo: 20 años, La Banda, Santiago Del Estero - Argentina 
