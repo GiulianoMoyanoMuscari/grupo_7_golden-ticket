@@ -18,6 +18,9 @@ Adolescentes y adultos amantes de la música mayores de 16
 ✔ [Ticketek](https://www.ticketek.com.ar/)
 ✔ [Tuentrada](https://www.tuentrada.com/)
 ✔ [Entradauno](https://www.entradauno.com/)
+✔ [TicketPortal](https://www.ticketportal.com.ar/)
+✔ [Livepass](https://livepass.com.ar/)
+
 
 ## Integrantes
 
