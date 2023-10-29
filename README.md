@@ -26,6 +26,6 @@ Adolescentes y adultos amantes de la música mayores de 16
 
 * María Fernanda Zurita Bravo: 20 años, La Banda, Santiago Del Estero - Argentina 
 * Jhonatan Jamir Abdala: 31 años, Santiago Del Estero - Argentina.
-* Giuliano Ezequiel Moyano Muscari: 23 años, Fernández, Santiago del Estero - Argentina. [@GiulianoMoyanoMuscari](https://github.com/GiulianoMoyanoMuscari)
+* Giuliano Ezequiel Moyano Muscari: 23 años, Fernández, Santiago del Estero - Argentina. 
 * Juan Ignacio Carrizo: 23 años. Soy de Santiago del Estero Capital. Estudiante de Administracion e iniciandome en la programacion. 
 * Juan Cruz Venier Rojas: 24 años. Iniciando en la programación. Santiago del Estero, Capital. 
