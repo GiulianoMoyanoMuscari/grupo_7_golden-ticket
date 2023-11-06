@@ -29,3 +29,6 @@ Adolescentes y adultos amantes de la música mayores de 16
 * Giuliano Ezequiel Moyano Muscari: 23 años, Fernández, Santiago del Estero - Argentina. 
 * Juan Ignacio Carrizo: 23 años. Soy de Santiago del Estero Capital. Estudiante de Administracion e iniciandome en la programacion. 
 * Juan Cruz Venier Rojas: 24 años. Iniciando en la programación. Santiago del Estero, Capital. 
+
+# Tablero de Trello
+Creamos un tablero en Trello en el cual puedes ver como avanzamos en nuestro proyecto. En este [enlace](https://trello.com/invite/b/MLmY28ky/ATTId6df760776b2ff34ad97bde8b761b57916C91DE9/proyecto-integrador-dh) podrás conocer nuestro progreso.
