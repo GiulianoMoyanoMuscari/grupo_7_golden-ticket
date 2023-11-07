@@ -8,7 +8,7 @@ const pathPublic = path.join(__dirname, './public/');
 
 // Definimos Rutas y Flujo Request-Response  //
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, './views/home.html'))
+  res.sendFile(path.join(__dirname, './views/index.html'))
 });
 app.get("/product-details", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/productDetail.html"));
