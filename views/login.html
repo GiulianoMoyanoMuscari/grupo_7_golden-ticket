@@ -12,13 +12,39 @@
     <header>
       <!-- Logo -->
       <div>
-        <a href="#"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
+        <a href="/"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
       </div>
     </header>
 
     <!------------------ Main ------------------->
     <main>
-      
+      <h2 class="title-form">Ingresa con tu cuenta o <a href="/register">Registrate</a></h2>
+
+      <div class="button-login"><a href="#">Iniciar Sesión con Google</a></div>
+
+      <p class="separator"><span></span> o <span></span></p>
+
+      <form action="#" method="post">
+
+        <div class="container-input">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required placeholder="Email">
+        </div>
+
+        <div class="container-input">
+          <label for="pass">Contraseña</label>
+          <input type="password" id="pass" name="password" required placeholder="Contraseña">
+        </div>
+
+        <div class="container-input">
+          <input type="checkbox" id="checkbox" name="keep_logged_in">
+          <label for="checkbox">Mantener sesión iniciada</label>
+        </div>
+
+        <button class="button-form" type="submit">Iniciar Sesión</button>
+
+        <a href="#">¿Olvidaste la Contraseña?</a>
+      </form>
     </main>
     <!------------------ Footer ------------------->
     <footer>
