@@ -2,7 +2,7 @@
   "name": "grupo_7_golden-ticket",
   "version": "1.0.0",
   "description": "**Golden Ticket** es un eCommerce especializado en la venta de entradas para eventos, con un enfoque principal en eventos de música. Nos esforzamos por ofrecer a los amantes de la música una experiencia de compra de entradas fácil y confiable, brindando acceso a los mejores y mas emocionantes eventos en la industria de la música.",
-  "main": "main.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
