@@ -33,9 +33,9 @@
 
     <!------------------ Main ------------------->
     <main>
+      <h2 class="title-main">Formulario de Compra</h2>
       <!-- Seccion de Informacion del Show -->
       <section class="container-info-show">
-        <img src="#" alt="Imagen del show">
         <div class="info-show-text">
           <h2 class="title-show">Fito Paez</h2>
           <p><i class="fa-regular fa-calendar-day"></i> Sábado 16 Diciembre, 21:00 hrs</p>
@@ -44,34 +44,70 @@
         </div>
       </section>
 
-      <!-- Seccion de precios -->
-      <section class="container-prices">
-        <div class="ticket-location">
-          <p>Campo General</p>
-          <p>$15.000</p>
-          <a href="./purchaseForm.html">Comprar</a>
-        </div>
-        <div class="ticket-location">
-          <p>Platea Este</p>
-          <p>$15.000</p>
-          <a href="./purchaseForm.html">Comprar</a>
-        </div>
-        <div class="ticket-location">
-          <p>Platea Oeste</p>
-          <p>$15.000</p>
-          <a href="./purchaseForm.html">Comprar</a>
-        </div>
-        <div class="ticket-location">
-          <p>Popular Norte</p>
-          <p>$15.000</p>
-          <a href="./purchaseForm.html">Comprar</a>
-        </div>
-        <div class="ticket-location">
-          <p>Popular Sur</p>
-          <p>$15.000</p>
-          <a href="./purchaseForm.html">Comprar</a>
-        </div>
+      <!-- Seccion de formulario -->
+      <section class="container-form">
+        <form action="/" method="post">
+          <fieldset>
+            <legend>Datos Personales</legend>
+
+            <!-- Nombre -->
+            <p class="container-input">
+              <label for="name">Nombre</label>
+              <input type="text" id="name" name="name" required>
+            </p>
+
+            <!-- Apelllido -->
+            <p class="container-input">
+              <label for="last-name">Apellido</label>
+              <input type="text" id="last-name" name="last-name" required>
+            </p>
+
+            <!-- DNI -->
+            <p class="container-input">
+              <label for="dni">Apellido</label>
+              <input type="number" id="dni" name="dni" required>
+            </p>
+
+            <!-- Email -->
+            <p class="container-input">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </p>
+          </fieldset>
+
+          <fieldset>
+            <legend>Datos de Pago</legend>
+
+            <!-- Numero de la tarjeta -->
+            <p class="container-input">
+              <label for="card-number">Numero de la tarjeta</label>
+              <input type="number" id="card-number" name="card-number" required>
+            </p>
+
+            <!-- Titular de tarjeta -->
+            <p class="container-input">
+              <label for="card-name">Titular de la Tarjeta</label>
+              <input type="text" id="card-name" name="card-name" required>
+            </p>
+
+            <!-- Fecha de expiracion -->
+            <p class="container-input">
+              <label for="expiration-date">Fecha de expiración</label>
+              <input type="number" id="expiration-date" name="expiration-date" required placeholder="MM/YY">
+            </p>
+
+            <!-- Codigo de Seguridad -->
+            <p class="container-input">
+              <label for="security-code">Código de Seguridad</label>
+              <input type="number" id="security-code" name="security-code" required>
+            </p>
+          </fieldset>
+
+          <button type="submit">Comprar</button>
+        </form>
       </section>
+
+
     </main>
 
     <!------------------ Footer ------------------->
