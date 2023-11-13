@@ -1,0 +1,53 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product{
+  background-color: #AFB;
+  margin: 1rem auto;
+}
+
+.product > img{
+  width: 100%;
+}
+
+.product > h3{
+  text-align: center;
+}
+
+.product-info{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1rem;
+  align-items: center;
+}
+
+.product-info > .left-info{
+  display: flex;
+  flex-direction: column;
+  background-color: #BAF;
+  text-align: center;
+  margin: 1rem;
+}
+
+.product-info > .right-info{
+  text-align: center;
+}
+
+
+/* Tablet size */
+@media only screen and (min-width: 361px) {
+  .product{
+    margin: 1rem;
+    flex: 40%;
+  }
+}
+
+/* Desktop size */
+@media only screen and (min-width: 769px) {
+  .product{
+    flex: 20%;
+  }
+}
