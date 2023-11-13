@@ -23,7 +23,7 @@ header {
   background-color: #666;
 }
 
-nav ul {
+header nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -31,11 +31,11 @@ nav ul {
   background-color: #333;
 }
 
-nav li {
+header nav li {
   float: left;
 }
 
-nav li a {
+header nav li a {
   display: block;
   color: white;
   text-align: center;
@@ -43,7 +43,7 @@ nav li a {
   text-decoration: none;
 }
 
-li a:hover {
+header li a:hover {
   background-color: #111;
 }
 
