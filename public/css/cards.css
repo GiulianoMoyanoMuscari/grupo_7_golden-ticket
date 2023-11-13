@@ -1,7 +1,5 @@
 .cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
 }
 
 .product{
@@ -36,18 +34,18 @@
   text-align: center;
 }
 
-
 /* Tablet size */
 @media only screen and (min-width: 361px) {
-  .product{
-    margin: 1rem;
-    flex: 40%;
+  .cards-container{
+    padding: 0 1em;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
   }
 }
 
 /* Desktop size */
 @media only screen and (min-width: 769px) {
-  .product{
-    flex: 20%;
+  .cards-container{
+    grid-template-columns: repeat(4, 1fr);
   }
 }
