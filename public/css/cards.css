@@ -2,50 +2,52 @@
   display: grid;
 }
 
-.product{
-  background-color: #AFB;
+.product {
   margin: 1rem auto;
+  background-color: #afb;
 }
 
-.product > img{
+.product > img {
   width: 100%;
 }
 
-.product > h3{
+.product > h3 {
+  padding: 0.5rem 0;
   text-align: center;
 }
 
-.product-info{
+.product-info {
   display: flex;
   flex-wrap: nowrap;
-  padding: 1rem;
   align-items: center;
 }
 
-.product-info > .left-info{
+.product-info > .left-info {
   display: flex;
   flex-direction: column;
-  background-color: #BAF;
+  background-color: var(--color-secondary);
   text-align: center;
-  margin: 1rem;
 }
 
-.product-info > .right-info{
+.product-info > .right-info {
   text-align: center;
 }
 
 /* Tablet size */
 @media only screen and (min-width: 361px) {
-  .cards-container{
-    padding: 0 1em;
+  .product {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .cards-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
+    padding: 0 1em;
   }
 }
 
 /* Desktop size */
 @media only screen and (min-width: 769px) {
-  .cards-container{
+  .cards-container {
     grid-template-columns: repeat(4, 1fr);
   }
 }
