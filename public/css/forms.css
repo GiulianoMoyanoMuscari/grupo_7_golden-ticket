@@ -1,0 +1,53 @@
+.container-input{
+  margin: 1rem 0;
+}
+
+.container-input input, .container-input select{
+  width: 100%;
+  border-style: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.container-input input[type=checkbox] {
+  width: inherit;
+}
+
+.container-input label[for=checkbox]{
+  display: inline;
+}
+
+.container-input label {
+  display: block;
+  padding: 1rem 0;
+  font-weight: 700;
+}
+
+.button-form{
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-style: none;
+  width: 100%;
+}
+
+main form {
+  padding: 1rem;
+  width: 100%;
+  margin: 3rem auto;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+/* Tablet size */
+@media only screen and (min-width: 361px) {
+  main form {
+    width: 80%;
+  }
+}
+
+/* Desktop size */
+@media only screen and (min-width: 769px) {
+  main form {
+    width: 60%;
+  }
+}
