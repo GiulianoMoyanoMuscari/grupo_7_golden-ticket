@@ -1,168 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Golden Ticket</title>
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous"referrerpolicy="no-referrer"/>
-  </head>
-  <body>
-    <!------------------ Header ------------------->
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Ticket</title>
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/carrousel.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+
+<body>
+  <!------------------ Header ------------------->
+  <header>
+    <!-- Logo -->
+    <div>
+      <a href="#"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
+    </div>
+  </header>
+
+  <!------------------ Main ------------------->
+  <main>
+    <h1>Registrate</h1>
+    <h2>¿Ya tienes tu cuenta? <a href="/login">Iniciá Sesión</a></h2>
+    <p>Completá tus datos con la info que figure en tu DNI. Estos datos son tu acceso a todos los eventos</p>
+    <div class="button-register">
+      <a href="#">Registrate con Gooogle</a>
+    </div>
+
+    <div class="separator">
+      <p><span></span> o <span></span></p>
+    </div>
+
+    <form action="/" method="post">
+      <!-- Nombre -->
+      <div class="container-input">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" required placeholder="Nombre *">
+      </div>
+
+      <!-- Apellido -->
+      <div class="container-input">
+        <label for="last-name">Apellido</label>
+        <input type="text" id="last-name" name="last-name" required placeholder="Apellido *">
+      </div>
+
+      <!-- Email -->
+      <div class="container-input">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Email *">
+      </div>
+
+      <!-- DNI -->
+      <div class="container-input">
+        <label for="dni">DNI</label>
+        <input type="number" name="dni" id="dni" required placeholder="DNI *">
+      </div>
+
+      <!-- Fecha de Nacimiento -->
+      <div class="container-input">
+        <label for="birthday">Fecha de nacimiento</label>
+        <input type="date" name="birthday" id="birthday" required />
+      </div>
+
+      <!-- Lugar de Residencia -->
+      <div class="container-input">
+        <label for="residence">Lugar de Residencia</label>
+        <select id="residence" name="residence">
+          <option selected disabled>Lugar de Residencia</option>
+          <option value="Buenos Aires">Buenos Aires</option>
+          <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+          <option value="Catamarca">Catamarca</option>
+          <option value="Chaco">Chaco</option>
+          <option value="Chubut">Chubut</option>
+          <option value="Córdoba">Córdoba</option>
+          <option value="Corrientes">Corrientes</option>
+          <option value="Entre Ríos">Entre Ríos</option>
+          <option value="Formosa">Formosa</option>
+          <option value="Jujuy">Jujuy</option>
+          <option value="La Pampa">La Pampa</option>
+          <option value="La Rioja">La Rioja</option>
+          <option value="Mendoza">Mendoza</option>
+          <option value="Misiones">Misiones</option>
+          <option value="Neuquén">Neuquén</option>
+          <option value="Río Negro">Río Negro</option>
+          <option value="Salta">Salta</option>
+          <option value="San Juan">San Juan</option>
+          <option value="San Luis">San Luis</option>
+          <option value="Santa Cruz">Santa Cruz</option>
+          <option value="Santa Fe">Santa Fe</option>
+          <option value="Santiago del Estero">Santiago del Estero</option>
+          <option value="Tierra del Fuego">Tierra del Fuego</option>
+          <option value="Tucumán">Tucumán</option>
+        </select>
+      </div>
+
+      <!-- Telefono -->
+      <div class="container-input">
+        <label for="number-phone">Numero de Teléfono</label>
+        <input type="number" name="number-phone" id="number-phone">
+      </div>
+
+      <!-- Contraseña -->
+      <div class="container-input">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Contraseña *" required>
+      </div>
+
+      <!-- Confirmar Contraseña -->
+      <div class="container-input">
+        <label for="confirm_password">Confirmar Contraseña</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar contraseña *"
+          required>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="container-input">
+        <input type="checkbox" id="checkbox" name="newslatter">
+        <label for="checkbox">Quiero recibir información por email sobre promociones o eventos que pueden
+          interesarme.</label>
+      </div>
+
+      <p>* Campos requeridos</p>
+
+      <button class="button-form" type="submit">Registrarme</button>
+    </form>
+  </main>
+  <!------------------ Footer ------------------->
+  <footer>
+    <!-- Footer Top Bar -->
+    <div class="footer-top-bar">
       <!-- Logo -->
       <div>
         <a href="#"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
       </div>
-    </header>
 
-    <!------------------ Main ------------------->
-    <main>
-      <h1>Registrate</h1>
-      <h2>¿Ya tienes tu cuenta? <a href="/login">Iniciá Sesión</a></h2>
-      <p>Completá tus datos con la info que figure en tu DNI. Estos datos son tu acceso a todos los eventos</p>
-      <div class="button-register">
-        <a href="#">Registrate con Gooogle</a>
+      <!-- Navegacion -->
+      <nav>
+        <ul class="footer-top-nav">
+          <li><a href="#">¿Sos artista o productor?</a></li>
+          <li><a href="#">Contanos tu experiencia</a></li>
+          <li><a href="#">contacto@goldenticket.com</a></li>
+        </ul>
+        <ul class="footer-top-nav-social">
+          <h5>Siguenos en:</h5>
+          <li><i class="fa-brands fa-facebook" style="color: #0446b9;"></i><a
+              href="https://www.facebook.com/">Facebook</a></li>
+          <li><i class="fa-brands fa-x-twitter"></i><a href="https://twitter.com/">Twitter</a></li>
+          <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/"></a>Youtube</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Footer Bot bar -->
+    <div class="footer-bot-bar">
+      <!-- Navegacion -->
+      <nav>
+        <ul class="footer-bot-nav">
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Terminos y Condiciones</a></li>
+          <li><a href="#">Privacidad</a></li>
+        </ul>
+      </nav>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>© Golden Ticket 2023 // Hecho con ❤️ en Argentina :)</p>
       </div>
+    </div>
+  </footer>
+</body>
 
-      <div class="separator">
-        <p><span></span> o <span></span></p>
-      </div>
-
-      <form action="/" method="post">
-        <!-- Nombre -->
-        <div class="container-input">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required placeholder="Nombre *">
-        </div>
-
-        <!-- Apellido -->
-        <div class="container-input">
-          <label for="last-name">Apellido</label>
-          <input type="text" id="last-name" name="last-name" required placeholder="Apellido *">
-        </div>
-        
-        <!-- Email -->
-        <div class="container-input">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="Email *">
-        </div>
-        
-        <!-- DNI -->
-        <div class="container-input">
-          <label for="dni">DNI</label>
-          <input type="number" name="dni" id="dni" required placeholder="DNI *">
-        </div>
-
-        <!-- Fecha de Nacimiento -->
-        <div class="container-input">
-          <label for="birthday">Fecha de nacimiento</label>
-          <input type="date" name="birthday" id="birthday" required />
-        </div>
-      
-        <!-- Lugar de Residencia -->
-        <div class="container-input">
-          <label for="residence">Lugar de Residencia</label>
-          <select id="residence" name="residence">
-            <option selected disabled>Lugar de Residencia</option>
-            <option value="Buenos Aires">Buenos Aires</option>
-            <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
-            <option value="Catamarca">Catamarca</option>
-            <option value="Chaco">Chaco</option>
-            <option value="Chubut">Chubut</option>
-            <option value="Córdoba">Córdoba</option>
-            <option value="Corrientes">Corrientes</option>
-            <option value="Entre Ríos">Entre Ríos</option>
-            <option value="Formosa">Formosa</option>
-            <option value="Jujuy">Jujuy</option>
-            <option value="La Pampa">La Pampa</option>
-            <option value="La Rioja">La Rioja</option>
-            <option value="Mendoza">Mendoza</option>
-            <option value="Misiones">Misiones</option>
-            <option value="Neuquén">Neuquén</option>
-            <option value="Río Negro">Río Negro</option>
-            <option value="Salta">Salta</option>
-            <option value="San Juan">San Juan</option>
-            <option value="San Luis">San Luis</option>
-            <option value="Santa Cruz">Santa Cruz</option>
-            <option value="Santa Fe">Santa Fe</option>
-            <option value="Santiago del Estero">Santiago del Estero</option>
-            <option value="Tierra del Fuego">Tierra del Fuego</option>
-            <option value="Tucumán">Tucumán</option>
-          </select>
-        </div>
-
-        <!-- Telefono -->
-        <div class="container-input">
-          <label for="number-phone">Numero de Teléfono</label>
-          <input type="number" name="number-phone" id="number-phone">
-        </div>
-
-        <!-- Contraseña -->
-        <div class="container-input">
-          <label for="password">Contraseña</label>
-          <input type="password" id="password" name="password" placeholder="Contraseña *" required>
-        </div>
-        
-        <!-- Confirmar Contraseña -->
-        <div class="container-input">
-          <label for="confirm_password">Confirmar Contraseña</label>
-          <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirmar contraseña *" required>
-        </div>
-
-        <!-- Checkbox -->
-        <div class="container-input">
-          <input type="checkbox" id="checkbox" name="newslatter">
-          <label for="checkbox">Quiero recibir información por email sobre promociones o eventos que pueden interesarme.</label>
-        </div>
-
-        <p>* Campos requeridos</p>
-
-        <button class="button-form" type="submit">Registrarme</button>
-      </form>
-    </main>
-    <!------------------ Footer ------------------->
-    <footer>
-      <!-- Footer Top Bar -->
-      <div class="footer-top-bar">
-        <!-- Logo -->
-        <div>
-          <a href="#"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
-        </div>
-
-        <!-- Navegacion -->
-        <nav>
-          <ul class="footer-top-nav">
-            <li><a href="#">¿Sos artista o productor?</a></li>
-            <li><a href="#">Contanos tu experiencia</a></li>
-            <li><a href="#">contacto@goldenticket.com</a></li>
-          </ul>
-          <ul class="footer-top-nav-social">
-            <h5>Siguenos en:</h5>
-            <li><i class="fa-brands fa-facebook" style="color: #0446b9;"></i><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><i class="fa-brands fa-x-twitter"></i><a href="https://twitter.com/">Twitter</a></li>
-            <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/">Instagram</a></li>
-            <li><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/"></a>Youtube</li>
-          </ul>
-        </nav>
-      </div>
-
-      <!-- Footer Bot bar -->
-      <div class="footer-bot-bar">
-        <!-- Navegacion -->
-        <nav>
-          <ul class="footer-bot-nav">
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Terminos y Condiciones</a></li>
-            <li><a href="#">Privacidad</a></li>
-          </ul>
-        </nav>
-
-        <!-- Copyright -->
-        <div class="copyright">
-          <p>© Golden Ticket 2023 // Hecho con ❤️ en Argentina :)</p>
-        </div>
-      </div>
-    </footer>
-  </body>
 </html>

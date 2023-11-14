@@ -1,93 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Golden Ticket</title>
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous"referrerpolicy="no-referrer"/>
-  </head>
-  <body>
-    <!------------------ Header ------------------->
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Golden Ticket</title>
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/carrousel.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+
+<body>
+  <!------------------ Header ------------------->
+  <header>
+    <!-- Logo -->
+    <div>
+      <a href="/"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
+    </div>
+  </header>
+
+  <!------------------ Main ------------------->
+  <main>
+    <h2 class="title-form">Ingresa con tu cuenta o <a href="/register">Registrate</a></h2>
+
+    <div class="button-login"><a href="#">Iniciar Sesión con Google</a></div>
+
+    <p class="separator"><span></span> o <span></span></p>
+
+    <form action="#" method="post">
+
+      <div class="container-input">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required placeholder="Email">
+      </div>
+
+      <div class="container-input">
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass" name="password" required placeholder="Contraseña">
+      </div>
+
+      <div class="container-input">
+        <input type="checkbox" id="checkbox" name="keep_logged_in">
+        <label for="checkbox">Mantener sesión iniciada</label>
+      </div>
+
+      <button class="button-form" type="submit">Iniciar Sesión</button>
+
+      <a href="#">¿Olvidaste la Contraseña?</a>
+    </form>
+  </main>
+  <!------------------ Footer ------------------->
+  <footer>
+    <!-- Footer Top Bar -->
+    <div class="footer-top-bar">
       <!-- Logo -->
       <div>
-        <a href="/"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
-      </div>
-    </header>
-
-    <!------------------ Main ------------------->
-    <main>
-      <h2 class="title-form">Ingresa con tu cuenta o <a href="/register">Registrate</a></h2>
-
-      <div class="button-login"><a href="#">Iniciar Sesión con Google</a></div>
-
-      <p class="separator"><span></span> o <span></span></p>
-
-      <form action="#" method="post">
-
-        <div class="container-input">
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" required placeholder="Email">
-        </div>
-
-        <div class="container-input">
-          <label for="pass">Contraseña</label>
-          <input type="password" id="pass" name="password" required placeholder="Contraseña">
-        </div>
-
-        <div class="container-input">
-          <input type="checkbox" id="checkbox" name="keep_logged_in">
-          <label for="checkbox">Mantener sesión iniciada</label>
-        </div>
-
-        <button class="button-form" type="submit">Iniciar Sesión</button>
-
-        <a href="#">¿Olvidaste la Contraseña?</a>
-      </form>
-    </main>
-    <!------------------ Footer ------------------->
-    <footer>
-      <!-- Footer Top Bar -->
-      <div class="footer-top-bar">
-        <!-- Logo -->
-        <div>
-          <a href="#"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
-        </div>
-
-        <!-- Navegacion -->
-        <nav>
-          <ul class="footer-top-nav">
-            <li><a href="#">¿Sos artista o productor?</a></li>
-            <li><a href="#">Contanos tu experiencia</a></li>
-            <li><a href="#">contacto@goldenticket.com</a></li>
-          </ul>
-          <ul class="footer-top-nav-social">
-            <h5>Siguenos en:</h5>
-            <li><i class="fa-brands fa-facebook" style="color: #0446b9;"></i><a href="https://www.facebook.com/">Facebook</a></li>
-            <li><i class="fa-brands fa-x-twitter"></i><a href="https://twitter.com/">Twitter</a></li>
-            <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/">Instagram</a></li>
-            <li><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/"></a>Youtube</li>
-          </ul>
-        </nav>
+        <a href="#"><img src="/images/logo.svg" alt="Logo Golden Ticket"></a>
       </div>
 
-      <!-- Footer Bot bar -->
-      <div class="footer-bot-bar">
-        <!-- Navegacion -->
-        <nav>
-          <ul class="footer-bot-nav">
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Terminos y Condiciones</a></li>
-            <li><a href="#">Privacidad</a></li>
-          </ul>
-        </nav>
+      <!-- Navegacion -->
+      <nav>
+        <ul class="footer-top-nav">
+          <li><a href="#">¿Sos artista o productor?</a></li>
+          <li><a href="#">Contanos tu experiencia</a></li>
+          <li><a href="#">contacto@goldenticket.com</a></li>
+        </ul>
+        <ul class="footer-top-nav-social">
+          <h5>Siguenos en:</h5>
+          <li><i class="fa-brands fa-facebook" style="color: #0446b9;"></i><a
+              href="https://www.facebook.com/">Facebook</a></li>
+          <li><i class="fa-brands fa-x-twitter"></i><a href="https://twitter.com/">Twitter</a></li>
+          <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/">Instagram</a></li>
+          <li><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com/"></a>Youtube</li>
+        </ul>
+      </nav>
+    </div>
 
-        <!-- Copyright -->
-        <div class="copyright">
-          <p>© Golden Ticket 2023 // Hecho con ❤️ en Argentina :)</p>
-        </div>
+    <!-- Footer Bot bar -->
+    <div class="footer-bot-bar">
+      <!-- Navegacion -->
+      <nav>
+        <ul class="footer-bot-nav">
+          <li><a href="#">Ayuda</a></li>
+          <li><a href="#">Terminos y Condiciones</a></li>
+          <li><a href="#">Privacidad</a></li>
+        </ul>
+      </nav>
+
+      <!-- Copyright -->
+      <div class="copyright">
+        <p>© Golden Ticket 2023 // Hecho con ❤️ en Argentina :)</p>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
