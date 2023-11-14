@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #FFF;
+  --color-primary: #fff;
   --color-primary-dark: #000;
   --color-primary-light: #000;
 
@@ -21,6 +21,21 @@ header {
   justify-content: space-around;
   /* align-items: center; */
   background-color: #666;
+}
+
+
+header .search-bar input {
+  border-style: none;
+  padding: 8px 10px;
+  border-radius: 8px 0 0 8px;
+  height: 2.5rem;
+}
+
+header .search-bar button {
+  border-style: none;
+  height: 2.5rem;
+  padding: 8px 10px;
+  border-radius: 0 8px 8px 0;
 }
 
 header nav ul {
