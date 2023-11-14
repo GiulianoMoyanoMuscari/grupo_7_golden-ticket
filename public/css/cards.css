@@ -4,6 +4,10 @@
   margin: 50px auto;
 }
 
+.product-section i{
+  color: var(--primary-200);
+}
+
 .cards-container {
   display: grid;
 }
