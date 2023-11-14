@@ -21,10 +21,18 @@
     />
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/carrousel.css" />
     <link rel="stylesheet" href="css/cards.css" />
     <link rel="stylesheet" href="css/footer.css" />
-
+    <!-- Slider -->
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -66,18 +74,30 @@
     <!------------------ Main ------------------->
     <main>
       <!-- Carrusel de Imagenes -->
-      <div class="slider">
-        <div class="slider-img-container">
-          <img src="https://dummyimage.com/750x405/BFF/EAB.png" alt="Img 1" />
-          <img src="https://dummyimage.com/750x405/FEB/AAF.png" alt="Img 2" />
-          <img src="https://dummyimage.com/750x405/A0E/AFA.png" alt="Img 3" />
+      <section class="splide content-center" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img class="responsive_image"
+                src="https://dummyimage.com/750x405/BFF/EAB.png"
+                alt="Img 1"
+              />
+            </li>
+            <li class="splide__slide">
+              <img class="responsive_image"
+                src="https://dummyimage.com/750x405/FEB/AAF.png"
+                alt="Img 2"
+              />
+            </li>
+            <li class="splide__slide">
+              <img class="responsive_image"
+                src="https://dummyimage.com/750x405/A0E/AFA.png"
+                alt="Img 3"
+              />
+            </li>
+          </ul>
         </div>
-        <div class="slider-buttons-container">
-          <a href="#"></a>
-          <a href="#"></a>
-          <a href="#"></a>
-        </div>
-      </div>
+      </section>
 
       <!-- Seccion 1 -->
       <section>
@@ -344,5 +364,11 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide = new Splide(".splide");
+        splide.mount();
+      });
+    </script>
   </body>
 </html>

@@ -84,3 +84,11 @@ header li a:hover {
 #logo svg {
   max-height: 100%;
 }
+
+.content-center{
+  text-align: center;
+}
+
+.responsive_image{
+  max-width: 100%;
+}
