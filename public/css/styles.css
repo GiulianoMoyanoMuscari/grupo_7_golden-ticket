@@ -6,6 +6,7 @@
   --color-secondary: #f4c01e;
   --color-secondary-dark: #000;
   --color-secondary-light: #000;
+  --Gris-claro: #ebebeb;
 }
 
 * {
@@ -15,14 +16,27 @@
   font-family: "Montserrat";
 }
 
+body{
+  background-color: var(--Gris-claro);
+}
+
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* align-items: center; */
+  align-items: center;
   background-color: #666;
+  padding: 25px;
 }
 
+#logo figcaption{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.search-bar{
+  margin: 15px 0;
+}
 
 header .search-bar input {
   border-style: none;
