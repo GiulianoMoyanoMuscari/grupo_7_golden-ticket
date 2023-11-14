@@ -1,0 +1,19 @@
+.container-prices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.form-select{
+    width: 300px;
+    margin: 0 50px;
+}
+
+.btn-comprar{
+    text-decoration: none;
+    color: black;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
