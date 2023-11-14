@@ -1,12 +1,23 @@
 :root {
-  --color-primary: #fff;
-  --color-primary-dark: #000;
-  --color-primary-light: #000;
+  --primary-100:#FFD700;
+  --primary-200: #f4c01e;
+  --primary-300:#ddb900;
+  --primary-400:#917800;
+  
+  --btn: #76bf41;
 
-  --color-secondary: #f4c01e;
-  --color-secondary-dark: #000;
-  --color-secondary-light: #000;
-  --Gris-claro: #ebebeb;
+  --accent-100:#C0C0C0;
+  --accent-200:#666;
+  --accent-300:#626262;
+
+  --text-100:#000;
+  --text-200:#333333;
+  --text-300:#5c5c5c;
+  
+  --bg-100:#F7F7F7;
+  --bg-200:#ededed;
+  --bg-300:#c4c4c4;
+  --bg-400: #ebebeb;
 }
 
 * {
@@ -26,7 +37,7 @@ header {
   justify-content: space-around;
   align-items: center;
   background-color: #666;
-  padding: 25px;
+  padding: 15px 25px;
 }
 
 #logo figcaption{
