@@ -13,11 +13,13 @@
 
 .btn-comprar {
     text-decoration: none;
-    color: black;
-    background-color: var(--btn);
-    padding: 10px 20px;
-    border-radius: 15px;
-    text-align: center;
+    color: white;
+    padding: 8px 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-color: #76bf41;
 }
 
 .btn-comprar:hover{
