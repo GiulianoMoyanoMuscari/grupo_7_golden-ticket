@@ -23,7 +23,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/login.css" />
   </head>
 
   <body>
@@ -68,13 +68,17 @@
         Ingresa con tu cuenta o <a href="/register">Registrate</a>
       </h2>
 
-      <a href="https://google.com">
+      <a class="button-google" href="https://google.com">
         <img src="/images/web_light_sq_ctn.svg" alt="Registrate con google" />
       </a>
 
-      <p class="separator"><span></span> o <span></span></p>
+      <p class="separator">
+        <span class="line"></span> 
+        <span>o</span> 
+        <span class="line"></span>
+      </p>
 
-      <form action="#" method="post">
+      <form action="/" method="post">
         <div class="container-input">
           <label for="email">Email</label>
           <input
@@ -99,12 +103,12 @@
 
         <div class="container-input">
           <input type="checkbox" id="checkbox" name="keep_logged_in" />
-          <label for="checkbox">Mantener sesión iniciada</label>
+          <label class="text-checkbox" for="checkbox">Mantener sesión iniciada</label>
         </div>
 
         <button class="button-form" type="submit">Iniciar Sesión</button>
 
-        <a href="#">¿Olvidaste la Contraseña?</a>
+        <a class="forgot-pass" href="#">¿Olvidaste la Contraseña?</a>
       </form>
     </main>
     <!------------------ Footer ------------------->

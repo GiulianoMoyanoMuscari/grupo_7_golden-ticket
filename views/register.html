@@ -23,7 +23,7 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/register.css" />
   </head>
 
   <body>
@@ -64,19 +64,21 @@
 
     <!------------------ Main ------------------->
     <main>
-      <h1>Registrate</h1>
-      <h2>¿Ya tienes tu cuenta? <a href="/login">Iniciá Sesión</a></h2>
-      <p>
-        Completá tus datos con la info que figure en tu DNI. Estos datos son tu
-        acceso a todos los eventos
+      <h1 class="title-form">Registrate</h1>
+      <h2 class="subtitle-form">¿Ya tienes tu cuenta? <a href="/login">Iniciá Sesión</a></h2>
+      <p class="info-form">
+        Completá tus datos con la info que figure en tu DNI. Estos datos son tu acceso a todos los eventos
       </p>
-      <a href="https://google.com">
+
+      <a class="button-google" href="https://google.com">
         <img src="/images/web_light_sq_ctn.svg" alt="Registrate con google"/>
       </a>
 
-      <div class="separator">
-        <p><span></span> o <span></span></p>
-      </div>
+      <p class="separator">
+        <span class="line"></span> 
+        <span>o</span> 
+        <span class="line"></span>
+      </p>
 
       <form action="/" method="post">
         <!-- Nombre -->
@@ -166,9 +168,9 @@
         </div>
 
         <!-- Telefono -->
-        <div class="container-input">
+        <div class="container-input phone-container">
           <label for="number-phone">Numero de Teléfono</label>
-          <input type="number" name="number-phone" id="number-phone" />
+          <input type="number" name="number-phone" id="number-phone" placeholder="Teléfono"/>
         </div>
 
         <!-- Contraseña -->
@@ -196,15 +198,12 @@
         </div>
 
         <!-- Checkbox -->
-        <div class="container-input">
+        <div class="container-input checkbox-container">
           <input type="checkbox" id="checkbox" name="newslatter" />
-          <label for="checkbox"
-            >Quiero recibir información por email sobre promociones o eventos
-            que pueden interesarme.</label
-          >
+          <label class="text-checkbox" for="checkbox">Quiero recibir información por email sobre promociones o eventos que pueden interesarme.</label>
         </div>
 
-        <p>* Campos requeridos</p>
+        <p class="required-text">* Campos requeridos</p>
 
         <button class="button-form" type="submit">Registrarme</button>
       </form>
