@@ -51,21 +51,14 @@ main form {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    width: 100%;
+    width: 80%;
     margin: 3rem auto;
     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
-/* Tablet size */
-@media only screen and (min-width: 361px) {
+/* Tablet or Desktop size */
+@media (min-width: 769px) {
     main form {
-        width: 80%;
-    }
-}
-
-/* Desktop size */
-@media only screen and (min-width: 769px) {
-    main form {
-        width: 60%;
+        width: 50%;
     }
 }
