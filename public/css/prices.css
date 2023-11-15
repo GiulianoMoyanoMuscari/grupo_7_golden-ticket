@@ -1,13 +1,14 @@
 .container-prices{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding: 50px;
+    padding: 0 50px 50px;
 }
 
 .form-select{
-    width: 300px;
-    margin: 0 50px;
+
+    margin: 5px;
 }
 
 .btn-comprar{
@@ -16,6 +17,7 @@
     background-color: grey;
     padding: 10px 20px;
     border-radius: 15px;
+    text-align: center;
 }
 
 .info-show{
