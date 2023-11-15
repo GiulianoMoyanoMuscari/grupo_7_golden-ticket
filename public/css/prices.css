@@ -17,3 +17,19 @@
     padding: 10px 20px;
     border-radius: 15px;
 }
+
+.info-show{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.show-img img{
+    width: 100%;
+}
+
+.show-text{
+    padding: 50px;
+}
