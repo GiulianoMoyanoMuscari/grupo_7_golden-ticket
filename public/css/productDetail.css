@@ -14,14 +14,14 @@
 .btn-comprar {
     text-decoration: none;
     color: black;
-    background-color: grey;
+    background-color: var(--btn);
     padding: 10px 20px;
     border-radius: 15px;
     text-align: center;
 }
 
 .btn-comprar:hover{
-    background-color: rgb(166, 166, 166);
+    background-color: var(--btn-hover);
 }
 
 .info-show {
