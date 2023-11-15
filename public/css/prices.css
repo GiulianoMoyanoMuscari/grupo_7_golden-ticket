@@ -20,6 +20,10 @@
     text-align: center;
 }
 
+.btn-comprar:hover{
+    background-color: rgb(166, 166, 166);
+}
+
 .info-show {
     display: flex;
     flex-direction: column;
@@ -33,7 +37,14 @@
 }
 
 .show-text {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 50px;
+}
+.show-text i{
+    padding: 0 10px;
 }
 
 /* Tablet or Desketop size */
