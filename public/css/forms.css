@@ -47,7 +47,7 @@
     width: 100%;
 }
 
-form {
+main form {
     display: flex;
     flex-direction: column;
     padding: 1rem;
