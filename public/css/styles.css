@@ -37,7 +37,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  background-color: #666;
+  background-color: #161615;
   padding: 15px 25px;
 }
 
@@ -95,7 +95,7 @@ header li a:hover {
 }
 
 #logo {
-  color: black;
+  color: whitesmoke;
   text-decoration: none;
   display: flex;
   align-items: center;
