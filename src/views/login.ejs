@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <!------------------ Main ------------------->
+    <main>
+      <h2 class="title-form">
+        Ingresa con tu cuenta o <a href="/register">Registrate</a>
+      </h2>
+
+      <a class="button-google" href="https://google.com">
+        <img src="/images/web_light_sq_ctn.svg" alt="Registrate con google" />
+      </a>
+
+      <p class="separator">
+        <span class="line"></span>
+        <span>o</span>
+        <span class="line"></span>
+      </p>
+
+      <form action="/" method="post">
+        <div class="container-input">
+          <label for="email">Email</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            required
+            placeholder="Email"
+          />
+        </div>
+
+        <div class="container-input">
+          <label for="pass">Contraseña</label>
+          <input
+            type="password"
+            id="pass"
+            name="password"
+            required
+            placeholder="Contraseña"
+          />
+        </div>
+
+        <div class="container-input">
+          <input type="checkbox" id="checkbox" name="keep_logged_in" />
+          <label class="text-checkbox" for="checkbox"
+            >Mantener sesión iniciada</label
+          >
+        </div>
+
+        <button class="button-form" type="submit">Iniciar Sesión</button>
+
+        <a class="forgot-pass" href="#">¿Olvidaste la Contraseña?</a>
+      </form>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

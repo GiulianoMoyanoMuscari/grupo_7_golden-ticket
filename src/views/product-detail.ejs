@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <!------------------ Main ------------------->
+    <main>
+      <!-- Seccion de Informacion del Show -->
+
+      <section class="info-show">
+        <div class="show-img">
+          <img src="/images/benjaminAmadeo.png" alt="" />
+        </div>
+
+        <div class="show-text">
+          <h2>Nombre Artista</h2>
+          <p>
+            <i class="fa-solid fa-calendar-days" style="color: #000000"></i
+            >Fecha y hora del show
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot" style="color: #000000"></i
+            >Nombre del estadio/lugar
+          </p>
+          <p>
+            <i class="fa-solid fa-location-dot" style="color: #000000"></i
+            >Ubicacion del estadio/lugar
+          </p>
+        </div>
+
+        <hr />
+      </section>
+
+      <!-- Seccion de precios -->
+
+      <section class="container-prices">
+        <!-- select de BOOTSTRAP -->
+
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Fecha</option>
+          <option value="16-dic">16 de Diciembre de 2023</option>
+          <option value="17-dic">17 de Diciembre de 2023</option>
+        </select>
+
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Sector</option>
+          <option value="campo-general">Campo General</option>
+          <option value="campo-vip">Campo VIP</option>
+          <option value="platea-este">Platea Preferencial Este</option>
+          <option value="platea-oeste">Platea Preferencial Oeste</option>
+          <option value="popular-norte">Popular Norte</option>
+          <option value="popular-sur">Popular Sur</option>
+        </select>
+
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Cantidad</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+
+        <a href="/purchase-form" class="btn-comprar">Comprar</a>
+      </section>
+    </main>
+    <%- include('./partials/footer') %>
+    <!-- Bootstrap -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
