@@ -11,13 +11,13 @@ app.set("view engine", "ejs");
 
 // Definimos Rutas y Flujo Request-Response  //
 app.get("/", (req, res) => {
-  res.render("index", { individualCss: "product-details" });
+  res.render("index", { individualCss: "product-detail" });
 });
 app.get("/product-details", (req, res) => {
-  res.render("product-details", { individualCss: "product-details" });
+  res.render("product-detail", { individualCss: "product-detail" });
 });
 app.get("/purchase-form", (req, res) => {
-  res.render("purchase-form", { individualCss: "product-form" });
+  res.render("purchase-form", { individualCss: "purchase-form" });
 });
 app.get("/product-cart", (req, res) => {
   res.render("product-cart");
@@ -27,6 +27,9 @@ app.get("/login", (req, res) => {
 });
 app.get("/register", (req, res) => {
   res.render("register", { individualCss: "register" });
+});
+app.get("/product/create", (req, res) => {
+  res.render("product-create-form", { individualCss: "register" });
 });
 
 // Dejamos Estaticos a los recursos de la carpeta Public //
