@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <main>
+      <h1 class="title-form">Formulario de Creación</h1>
+      <form action="/" method="post">
+        <!-- Nombre -->
+        <div class="container-input">
+          <label for="name">Nombre del Artista/Show</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <!-- Precio -->
+        <div class="container-input">
+          <label for="price">Precio</label>
+          <input type="number" id="price" name="price" required />
+        </div>
+
+        <!-- Nombre del Estadio/lugar -->
+        <div class="container-input">
+          <label for="text">Nombre del Estadio/lugar</label>
+          <input type="text" id="name-stadium" name="name-stadium" required />
+        </div>
+
+        <!-- Fecha  -->
+        <div class="container-input">
+          <label for="date">Fecha del show</label>
+          <input type="date" name="date" id="date" required />
+        </div>
+
+        <!-- Lugar del Show -->
+        <div class="container-input">
+          <label for="location">Lugar del Show</label>
+          <select id="location" name="location">
+            <option selected disabled>Lugar del Show</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre Ríos">Entre Ríos</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquén">Neuquén</option>
+            <option value="Río Negro">Río Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Santiago del Estero">Santiago del Estero</option>
+            <option value="Tierra del Fuego">Tierra del Fuego</option>
+            <option value="Tucumán">Tucumán</option>
+          </select>
+        </div>
+
+        <!-- Descripcion  -->
+        <div class="container-input">
+          <label for="description">Agregue una Descripcion</label>
+          <textarea name="description" id="description"></textarea>
+        </div>
+
+        <button class="button-form" type="submit">Agregar Show</button>
+      </form>
+    </main>
+    <%- include('./partials/footer') %>
+  </body>
+</html>

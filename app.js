@@ -1,41 +1,30 @@
+// ************ Require's ************
 const express = require("express");
-const app = express();
 const path = require("path");
 
-const PORT = 3000;
+// ************ express() - (don't touch)************
+const app = express();
 
+// ************ Configuraciones ************
+// Dejamos Estaticos a los recursos de la carpeta Public //
 const pathPublic = path.join(__dirname, "./src/public/");
+app.use(express.static(pathPublic));
 
+// Motor de Vistas
 app.set("views", path.join(__dirname, "/src/views"));
 app.set("view engine", "ejs");
 
-// Definimos Rutas y Flujo Request-Response  //
-app.get("/", (req, res) => {
-  res.render("index", { individualCss: "product-detail" });
-});
-app.get("/product-details", (req, res) => {
-  res.render("product-detail", { individualCss: "product-detail" });
-});
-app.get("/purchase-form", (req, res) => {
-  res.render("purchase-form", { individualCss: "purchase-form" });
-});
-app.get("/product-cart", (req, res) => {
-  res.render("product-cart");
-});
-app.get("/login", (req, res) => {
-  res.render("login", { individualCss: "login" });
-});
-app.get("/register", (req, res) => {
-  res.render("register", { individualCss: "register" });
-});
-app.get("/product/create", (req, res) => {
-  res.render("product-create-form", { individualCss: "register" });
-});
 
-// Dejamos Estaticos a los recursos de la carpeta Public //
-app.use(express.static(pathPublic));
+// ************ Route System require and use() ************
+const mainRouter = require('./src/routes/main.routes'); // Require Rutas main
+const productsRouter = require('./src/routes/products.routes'); // Require Rutas products
 
-// Levantamos el Servidor //
+app.use('/', mainRouter);
+app.use('/products', productsRouter);
+
+
+// ************ Levantamos el Servidor ************
+const PORT = 3000;
 app.listen(PORT, () =>
   console.log(
     `Servidor funcionando en el puerto ${PORT}. http://localhost:3000/`

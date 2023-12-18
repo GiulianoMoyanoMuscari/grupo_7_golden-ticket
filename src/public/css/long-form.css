@@ -64,7 +64,7 @@ main form {
   font-size: 12px;
 }
 
-.container-input input, .container-input select{
+.container-input input, .container-input select, .container-input textarea{
   width: 100%;
   border-style: none;
   padding: 0.5rem;
