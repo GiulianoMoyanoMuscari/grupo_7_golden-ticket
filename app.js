@@ -14,14 +14,12 @@ app.use(express.static(pathPublic));
 app.set("views", path.join(__dirname, "/src/views"));
 app.set("view engine", "ejs");
 
-
 // ************ Route System require and use() ************
-const mainRouter = require('./src/routes/main.routes'); // Require Rutas main
-const productsRouter = require('./src/routes/products.routes'); // Require Rutas products
+const mainRouter = require("./src/routes/main.routes"); // Require Rutas main
+const productsRouter = require("./src/routes/products.routes"); // Require Rutas products
 
-app.use('/', mainRouter);
-app.use('/products', productsRouter);
-
+app.use("/", mainRouter);
+app.use("/products", productsRouter);
 
 // ************ Levantamos el Servidor ************
 const PORT = 3000;
@@ -30,3 +28,8 @@ app.listen(PORT, () =>
     `Servidor funcionando en el puerto ${PORT}. http://localhost:3000/`
   )
 );
+
+// Esto es solo para pruebas, será borrado antes de cerrar el sprint
+console.log("Prueba de datos");
+const test = require("./src/db");
+console.log(test.readAll("products"));
