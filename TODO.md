@@ -5,3 +5,11 @@
   - [ ] Reemplazado
   - [ ] Creacion
   - [ ] Borrado
+
+> producto:
+  id
+  nombre
+  descripcion
+  precio
+  categoria
+  imagen

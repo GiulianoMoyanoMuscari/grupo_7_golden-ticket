@@ -18,17 +18,20 @@ app.set("view engine", "ejs");
 // ************ Route System require and use() ************
 const mainRouter = require("./src/routes/main.routes"); // Require Rutas main
 const productsRouter = require("./src/routes/products.routes"); // Require Rutas products
+const usersRouter = require("./src/routes/users.routes"); // Require Rutas products
+
 
 app.use("/", mainRouter);
+app.use("/users", usersRouter);
 app.use("/products", productsRouter);
 
 // ************ Levantamos el Servidor ************
 const PORT = 3000;
 app.listen(PORT, () =>
   console.log(
-    `Servidor funcionando en el puerto ${PORT}. http://localhost:3000/`,
-    "\nEndpoints de la aplicación: ",
-    listEndpoints(app)
+    "Endpoints de la aplicación: ",
+    listEndpoints(app),
+    `\nServidor funcionando en el puerto ${PORT}. http://localhost:3000/`,
   )
 );
 

@@ -1,32 +1,32 @@
 const controller = {
   // Todos los productos
 	index: (req, res) => {
-		res.render('products.ejs')
+		res.render('products/products.ejs')
 	},
 
   // Detalle de 1 producto
 	detail: (req, res) => {
-    res.render('product-detail', { individualCss: "product-detail" })
+    res.render("products/product-detail", { individualCss: "product-detail" });
 	},
 
   // carrito de compra
 	cart: (req, res) => {
-		res.render('product-cart')
+		res.render("products/product-cart");
 	},
 
 	// Formulario de Compra
 	purchase: (req, res) => {
-		res.render('purchase-form' , { individualCss: "purchase-form" })
+		res.render("products/purchase-form", { individualCss: "purchase-form" });
 	},
 
 	// Formulario de Creacion
 	create: (req, res) => {
-		res.render('product-create-form', { individualCss: "register" })
+		res.render("products/product-create-form", { individualCss: "register" });
 	},
 
 	// Formulario de Edicion
 	edit: (req, res) => {
-		res.render('product-edit-form', { individualCss: "register" })
+		res.render("products/product-edit-form", { individualCss: "register" });
 	}
 };
 
