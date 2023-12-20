@@ -1,6 +1,7 @@
 // ************ Require's ************
 const express = require("express");
 const path = require("path");
+const listEndpoints = require("express-list-endpoints");
 
 // ************ express() - (don't touch)************
 const app = express();
@@ -25,7 +26,9 @@ app.use("/products", productsRouter);
 const PORT = 3000;
 app.listen(PORT, () =>
   console.log(
-    `Servidor funcionando en el puerto ${PORT}. http://localhost:3000/`
+    `Servidor funcionando en el puerto ${PORT}. http://localhost:3000/`,
+    "\nEndpoints de la aplicación: ",
+    listEndpoints(app)
   )
 );
 
