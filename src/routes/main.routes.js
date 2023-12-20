@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 // ************ Controller Require ************
-const mainController = require('../controllers/main.controllers');
+const mainController = require('../controllers/main.controller');
 
 router.get('/', mainController.index); 
 
