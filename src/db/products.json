@@ -1,3 +1,242 @@
 [
-  
+  {
+    "id": 1,
+    "nombre": "A Blank on the Map",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$1884.32",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/151x100.png/dddddd/000000"
+  },
+  {
+    "id": 2,
+    "nombre": "976-EVIL II",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$3510.02",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/242x100.png/dddddd/000000"
+  },
+  {
+    "id": 3,
+    "nombre": "Butterfly Kiss",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$2584.76",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/150x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 4,
+    "nombre": "Boost, The",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$2848.59",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/249x100.png/ff4444/ffffff"
+  },
+  {
+    "id": 5,
+    "nombre": "Order and Disorder",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$1485.11",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/134x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 6,
+    "nombre": "Bread, Love and Dreams (Pane, amore e fantasia)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$1805.49",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/229x100.png/ff4444/ffffff"
+  },
+  {
+    "id": 7,
+    "nombre": "Iron Monkey (Siu nin Wong Fei-hung ji: Tit Ma Lau)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4240.25",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/183x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 8,
+    "nombre": "The Last Shark",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$2576.55",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/219x100.png/5fa2dd/ffffff"
+  },
+  {
+    "id": 9,
+    "nombre": "Gladiators, The (Gladiatorerna)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$1814.92",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/213x100.png/5fa2dd/ffffff"
+  },
+  {
+    "id": 10,
+    "nombre": "The Fat Albert Halloween Special",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$3953.46",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/225x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 11,
+    "nombre": "Jodhaa Akbar",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$3807.38",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/144x100.png/ff4444/ffffff"
+  },
+  {
+    "id": 12,
+    "nombre": "Jaws 3-D",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$1513.75",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/105x100.png/ff4444/ffffff"
+  },
+  {
+    "id": 13,
+    "nombre": "Savage Innocents, The",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$1019.52",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/206x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 14,
+    "nombre": "Murder in the First",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4177.87",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/248x100.png/ff4444/ffffff"
+  },
+  {
+    "id": 15,
+    "nombre": "Living with the Fosters",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4299.38",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/174x100.png/dddddd/000000"
+  },
+  {
+    "id": 16,
+    "nombre": "Prize of Peril, The (Prix du danger, Le)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$3181.63",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/154x100.png/ff4444/ffffff"
+  },
+  {
+    "id": 17,
+    "nombre": "Moine, Le (Monk, The)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4185.55",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/164x100.png/5fa2dd/ffffff"
+  },
+  {
+    "id": 18,
+    "nombre": "Polytechnique",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$2915.30",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/111x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 19,
+    "nombre": "District 13: Ultimatum (Banlieue 13 - Ultimatum)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$2107.35",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/105x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 20,
+    "nombre": "Capture of Bigfoot, The",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4217.66",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/125x100.png/dddddd/000000"
+  },
+  {
+    "id": 21,
+    "nombre": "No Holds Barred",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4963.36",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/227x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 22,
+    "nombre": "Living with Wolves",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4204.33",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/171x100.png/5fa2dd/ffffff"
+  },
+  {
+    "id": 23,
+    "nombre": "Merry Widow, The",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$1571.10",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/173x100.png/cc0000/ffffff"
+  },
+  {
+    "id": 24,
+    "nombre": "Authors Anonymous",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4343.78",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/202x100.png/dddddd/000000"
+  },
+  {
+    "id": 25,
+    "nombre": "Hollywood and The Pentagon: A Dangerous Liaison",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4538.18",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/231x100.png/dddddd/000000"
+  },
+  {
+    "id": 26,
+    "nombre": "Knocked Up",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$3610.33",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/226x100.png/ff4444/ffffff"
+  },
+  {
+    "id": 27,
+    "nombre": "Brother Sun, Sister Moon (Fratello sole, sorella luna)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4686.58",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/206x100.png/ff4444/ffffff"
+  },
+  {
+    "id": 28,
+    "nombre": "Santa's Slay",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$2013.72",
+    "categoria": "destacados",
+    "imagen": "http://dummyimage.com/179x100.png/dddddd/000000"
+  },
+  {
+    "id": 29,
+    "nombre": "Mary",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$4266.31",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/243x100.png/5fa2dd/ffffff"
+  },
+  {
+    "id": 30,
+    "nombre": "Susan Lenox (Her Fall and Rise)",
+    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
+    "precio": "$2017.18",
+    "categoria": "esta semana",
+    "imagen": "http://dummyimage.com/157x100.png/cc0000/ffffff"
+  }
 ]

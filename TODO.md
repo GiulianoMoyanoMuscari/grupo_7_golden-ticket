@@ -11,5 +11,14 @@
   nombre
   descripcion
   precio
-  categoria
+  categoria ("esta semana", "destacados")
+  imagen
+
+> usuario
+  id 
+  nombre
+  apellido
+  email
+  constaseña
+  categoria (admin, cliente)
   imagen
