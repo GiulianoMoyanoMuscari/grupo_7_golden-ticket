@@ -4,7 +4,7 @@ const controller = {
   // Todos los productos
   index: (req, res) => {
     const products = db.readAll("products");
-    res.render("products/products.ejs", { list: products });
+    res.render("products/products.ejs", { list: products, individualCss: "product-detail" },);
   },
 
   // Detalle de 1 producto
