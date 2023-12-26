@@ -1,10 +1,10 @@
 # COSAS POR HACER
 
-- [ ] Crear motor de escritura json
-  - [ ] Busqueda con Find
-  - [ ] Reemplazado
-  - [ ] Creacion
-  - [ ] Borrado
+- [X] Crear motor de escritura json
+  - [X] Busqueda con Find
+  - [X] Reemplazado
+  - [X] Creacion
+  - [X] Borrado
 
 > producto:
   id
@@ -12,6 +12,8 @@
   descripcion
   precio
   categoria ("esta semana", "destacados")
+  FECHA!
+  LUGAR!
   imagen
 
 > usuario

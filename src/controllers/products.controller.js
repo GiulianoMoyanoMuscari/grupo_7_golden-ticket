@@ -13,9 +13,9 @@ const controller = {
   // Detalle de 1 producto
   detail: (req, res) => {
     const id = parseInt(req.params.id);
-    const product = db.readOne("products", id);
-    res.send(product);
-    // res.render("products/product-detail", { individualCss: "product-detail" });
+    const producto = db.readOne("products", id);
+    // debe renderizar la vista con los detalles del producto
+    res.render("products/product-detail", { individualCss: "product-detail", data: producto});
   },
 
   // carrito de compra
@@ -44,7 +44,8 @@ const controller = {
 
   // Formulario de Edicion
   edit: (req, res) => {
-    db.update("products", parseInt(req.params.id), {
+    const producto = db.readOne(parseInt(req.params.id));
+    /* db.update("products", producto.id, {
       id: parseInt(req.params.id),
       nombre: req.params.nombre,
       descripcion: req.params.descripcion,
@@ -52,8 +53,8 @@ const controller = {
       categoria: req.params.categoria,
       imagen: req.params.imagen,
       fecha: req.params.fecha,
-    });
-    res.render("products/product-edit-form", { individualCss: "login" });
+    }); */
+    res.render("products/product-edit-form", { individualCss: "login", data: producto});
   },
 };
 

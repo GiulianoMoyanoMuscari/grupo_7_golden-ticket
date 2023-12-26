@@ -33,3 +33,6 @@ app.listen(PORT, () =>
     `\nServidor funcionando en el puerto ${PORT}. http://localhost:3000/`
   )
 );
+
+const db = require('./src/db')
+console.log(db.readOne("products", 30));

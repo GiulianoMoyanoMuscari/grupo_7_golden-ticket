@@ -259,14 +259,5 @@
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/243x100.png/5fa2dd/ffffff",
     "fecha": "1731310034000"
-  },
-  {
-    "id": 30,
-    "nombre": "Susan Lenox (Her Fall and Rise)",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$2017.18",
-    "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/157x100.png/cc0000/ffffff",
-    "fecha": "1709295315000"
   }
 ]
