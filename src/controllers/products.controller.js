@@ -9,12 +9,15 @@ const controller = {
 
   // Detalle de 1 producto
   detail: (req, res) => {
-    res.render("products/product-detail", { individualCss: "product-detail" });
+    const id = parseInt(req.params.id);
+    const product = db.find("products", id);
+    res.send(product);
+    // res.render("products/product-detail", { individualCss: "product-detail" });
   },
 
   // carrito de compra
   cart: (req, res) => {
-    res.render("products/product-cart");
+    res.render("products/product-cart", { individualCss: undefined});
   },
 
   // Formulario de Compra
