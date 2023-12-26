@@ -15,7 +15,10 @@ const controller = {
     const id = parseInt(req.params.id);
     const producto = db.readOne("products", id);
     // debe renderizar la vista con los detalles del producto
-    res.render("products/product-detail", { individualCss: "product-detail", data: producto});
+    res.render("products/product-detail", {
+      individualCss: "product-detail",
+      data: producto,
+    });
   },
 
   // carrito de compra
@@ -30,6 +33,11 @@ const controller = {
 
   // Formulario de Creacion
   create: (req, res) => {
+    res.render("products/product-create-form", { individualCss: "login" });
+  },
+
+  // Endpoint de Creacion
+  put: (req, res) => {
     db.create("products", {
       id: parseInt(req.params.id),
       nombre: req.params.nombre,
@@ -39,12 +47,17 @@ const controller = {
       imagen: req.params.imagen,
       fecha: req.params.fecha,
     });
-    res.render("products/product-create-form", { individualCss: "login" });
+    res.send("producto creado!");
+  },
+
+  destroy: (req, res) => {
+    db.delete("products", req.params.id);
+    res.reditect('/');
   },
 
   // Formulario de Edicion
   edit: (req, res) => {
-    const producto = db.readOne(parseInt(req.params.id));
+    const producto = db.readOne("products", parseInt(req.params.id));
     /* db.update("products", producto.id, {
       id: parseInt(req.params.id),
       nombre: req.params.nombre,
@@ -54,7 +67,10 @@ const controller = {
       imagen: req.params.imagen,
       fecha: req.params.fecha,
     }); */
-    res.render("products/product-edit-form", { individualCss: "login", data: producto});
+    res.render("products/product-edit-form", {
+      individualCss: "login",
+      data: producto,
+    });
   },
 };
 

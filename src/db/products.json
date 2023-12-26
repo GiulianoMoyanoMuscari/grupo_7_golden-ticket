@@ -3,7 +3,7 @@
     "id": 1,
     "nombre": "A Blank on the Map",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$1884.32",
+    "precio": "1884.32",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/151x100.png/dddddd/000000",
     "fecha": "1732509426000"
@@ -12,7 +12,7 @@
     "id": 2,
     "nombre": "976-EVIL II",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$3510.02",
+    "precio": "3510.02",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/242x100.png/dddddd/000000",
     "fecha": "1719337955000"
@@ -21,7 +21,7 @@
     "id": 3,
     "nombre": "Butterfly Kiss",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$2584.76",
+    "precio": "2584.76",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/150x100.png/cc0000/ffffff",
     "fecha": "1714184386000"
@@ -30,7 +30,7 @@
     "id": 4,
     "nombre": "Boost, The",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$2848.59",
+    "precio": "2848.59",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/249x100.png/ff4444/ffffff",
     "fecha": "1724749231000"
@@ -39,7 +39,7 @@
     "id": 5,
     "nombre": "Order and Disorder",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$1485.11",
+    "precio": "1485.11",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/134x100.png/cc0000/ffffff",
     "fecha": "1716508872000"
@@ -48,7 +48,7 @@
     "id": 6,
     "nombre": "Bread, Love and Dreams (Pane, amore e fantasia)",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$1805.49",
+    "precio": "1805.49",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/229x100.png/ff4444/ffffff",
     "fecha": "1727653372000"
@@ -57,7 +57,7 @@
     "id": 7,
     "nombre": "Iron Monkey (Siu nin Wong Fei-hung ji: Tit Ma Lau)",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4240.25",
+    "precio": "4240.25",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/183x100.png/cc0000/ffffff",
     "fecha": "1728265991000"
@@ -66,7 +66,7 @@
     "id": 8,
     "nombre": "The Last Shark",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$2576.55",
+    "precio": "2576.55",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/219x100.png/5fa2dd/ffffff",
     "fecha": "1733466883000"
@@ -75,7 +75,7 @@
     "id": 9,
     "nombre": "Gladiators, The (Gladiatorerna)",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$1814.92",
+    "precio": "1814.92",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/213x100.png/5fa2dd/ffffff",
     "fecha": "1723355250000"
@@ -84,7 +84,7 @@
     "id": 10,
     "nombre": "The Fat Albert Halloween Special",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$3953.46",
+    "precio": "3953.46",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/225x100.png/cc0000/ffffff",
     "fecha": "1733300507000"
@@ -93,7 +93,7 @@
     "id": 11,
     "nombre": "Jodhaa Akbar",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$3807.38",
+    "precio": "3807.38",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/144x100.png/ff4444/ffffff",
     "fecha": "1723281933000"
@@ -102,7 +102,7 @@
     "id": 12,
     "nombre": "Jaws 3-D",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$1513.75",
+    "precio": "1513.75",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/105x100.png/ff4444/ffffff",
     "fecha": "1725055934000"
@@ -111,7 +111,7 @@
     "id": 13,
     "nombre": "Savage Innocents, The",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$1019.52",
+    "precio": "1019.52",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/206x100.png/cc0000/ffffff",
     "fecha": "1732599722000"
@@ -120,7 +120,7 @@
     "id": 14,
     "nombre": "Murder in the First",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4177.87",
+    "precio": "4177.87",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/248x100.png/ff4444/ffffff",
     "fecha": "1726001528000"
@@ -129,7 +129,7 @@
     "id": 15,
     "nombre": "Living with the Fosters",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4299.38",
+    "precio": "4299.38",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/174x100.png/dddddd/000000",
     "fecha": "1717264369000"
@@ -138,7 +138,7 @@
     "id": 16,
     "nombre": "Prize of Peril, The (Prix du danger, Le)",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$3181.63",
+    "precio": "3181.63",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/154x100.png/ff4444/ffffff",
     "fecha": "1708915843000"
@@ -147,7 +147,7 @@
     "id": 17,
     "nombre": "Moine, Le (Monk, The)",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4185.55",
+    "precio": "4185.55",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/164x100.png/5fa2dd/ffffff",
     "fecha": "1722501172000"
@@ -156,7 +156,7 @@
     "id": 18,
     "nombre": "Polytechnique",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$2915.30",
+    "precio": "2915.30",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/111x100.png/cc0000/ffffff",
     "fecha": "1707290140000"
@@ -165,7 +165,7 @@
     "id": 19,
     "nombre": "District 13: Ultimatum (Banlieue 13 - Ultimatum)",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$2107.35",
+    "precio": "2107.35",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/105x100.png/cc0000/ffffff",
     "fecha": "1727612630000"
@@ -174,7 +174,7 @@
     "id": 20,
     "nombre": "Capture of Bigfoot, The",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4217.66",
+    "precio": "4217.66",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/125x100.png/dddddd/000000",
     "fecha": "1712077628000"
@@ -183,7 +183,7 @@
     "id": 21,
     "nombre": "No Holds Barred",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4963.36",
+    "precio": "4963.36",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/227x100.png/cc0000/ffffff",
     "fecha": "1713589985000"
@@ -192,7 +192,7 @@
     "id": 22,
     "nombre": "Living with Wolves",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4204.33",
+    "precio": "4204.33",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/171x100.png/5fa2dd/ffffff",
     "fecha": "1734207792000"
@@ -201,7 +201,7 @@
     "id": 23,
     "nombre": "Merry Widow, The",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$1571.10",
+    "precio": "1571.10",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/173x100.png/cc0000/ffffff",
     "fecha": "1716927245000"
@@ -210,7 +210,7 @@
     "id": 24,
     "nombre": "Authors Anonymous",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4343.78",
+    "precio": "4343.78",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/202x100.png/dddddd/000000",
     "fecha": "1715899242000"
@@ -219,7 +219,7 @@
     "id": 25,
     "nombre": "Hollywood and The Pentagon: A Dangerous Liaison",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4538.18",
+    "precio": "4538.18",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/231x100.png/dddddd/000000",
     "fecha": "1721452163000"
@@ -228,7 +228,7 @@
     "id": 26,
     "nombre": "Knocked Up",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$3610.33",
+    "precio": "3610.33",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/226x100.png/ff4444/ffffff",
     "fecha": "1718233399000"
@@ -237,7 +237,7 @@
     "id": 27,
     "nombre": "Brother Sun, Sister Moon (Fratello sole, sorella luna)",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4686.58",
+    "precio": "4686.58",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/206x100.png/ff4444/ffffff",
     "fecha": "1729584251000"
@@ -246,7 +246,7 @@
     "id": 28,
     "nombre": "Santa's Slay",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$2013.72",
+    "precio": "2013.72",
     "categoria": "destacados",
     "imagen": "http://dummyimage.com/179x100.png/dddddd/000000",
     "fecha": "1729054699000"
@@ -255,7 +255,7 @@
     "id": 29,
     "nombre": "Mary",
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "$4266.31",
+    "precio": "4266.31",
     "categoria": "esta semana",
     "imagen": "http://dummyimage.com/243x100.png/5fa2dd/ffffff",
     "fecha": "1731310034000"

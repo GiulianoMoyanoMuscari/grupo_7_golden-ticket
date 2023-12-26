@@ -5,6 +5,14 @@
   - [X] Reemplazado
   - [X] Creacion
   - [X] Borrado
+- [] Agregar LUGAR para la base de datos de productos
+- [] Mostrar productos dinámicamente en index
+- [] Mostrar boton de Editar en lista de productos
+- [] Mostrar datos en formulario de edición
+- [] Mejorar el endpoint de creación de producto (redirect)
+- [] En los endpoints donde se recibe /:id hay que filtrar los id numéricos
+
+- [] Preguntar sobre el apartado PURCHASE
 
 > producto:
   id
