@@ -5,7 +5,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$1884.32",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/151x100.png/dddddd/000000"
+    "imagen": "http://dummyimage.com/151x100.png/dddddd/000000",
+    "fecha": "1732509426000"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$3510.02",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/242x100.png/dddddd/000000"
+    "imagen": "http://dummyimage.com/242x100.png/dddddd/000000",
+    "fecha": "1719337955000"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$2584.76",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/150x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/150x100.png/cc0000/ffffff",
+    "fecha": "1714184386000"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$2848.59",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/249x100.png/ff4444/ffffff"
+    "imagen": "http://dummyimage.com/249x100.png/ff4444/ffffff",
+    "fecha": "1724749231000"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$1485.11",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/134x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/134x100.png/cc0000/ffffff",
+    "fecha": "1716508872000"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$1805.49",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/229x100.png/ff4444/ffffff"
+    "imagen": "http://dummyimage.com/229x100.png/ff4444/ffffff",
+    "fecha": "1727653372000"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4240.25",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/183x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/183x100.png/cc0000/ffffff",
+    "fecha": "1728265991000"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$2576.55",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/219x100.png/5fa2dd/ffffff"
+    "imagen": "http://dummyimage.com/219x100.png/5fa2dd/ffffff",
+    "fecha": "1733466883000"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$1814.92",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/213x100.png/5fa2dd/ffffff"
+    "imagen": "http://dummyimage.com/213x100.png/5fa2dd/ffffff",
+    "fecha": "1723355250000"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$3953.46",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/225x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/225x100.png/cc0000/ffffff",
+    "fecha": "1733300507000"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$3807.38",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/144x100.png/ff4444/ffffff"
+    "imagen": "http://dummyimage.com/144x100.png/ff4444/ffffff",
+    "fecha": "1723281933000"
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$1513.75",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/105x100.png/ff4444/ffffff"
+    "imagen": "http://dummyimage.com/105x100.png/ff4444/ffffff",
+    "fecha": "1725055934000"
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$1019.52",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/206x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/206x100.png/cc0000/ffffff",
+    "fecha": "1732599722000"
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4177.87",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/248x100.png/ff4444/ffffff"
+    "imagen": "http://dummyimage.com/248x100.png/ff4444/ffffff",
+    "fecha": "1726001528000"
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4299.38",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/174x100.png/dddddd/000000"
+    "imagen": "http://dummyimage.com/174x100.png/dddddd/000000",
+    "fecha": "1717264369000"
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$3181.63",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/154x100.png/ff4444/ffffff"
+    "imagen": "http://dummyimage.com/154x100.png/ff4444/ffffff",
+    "fecha": "1708915843000"
   },
   {
     "id": 17,
@@ -133,7 +149,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4185.55",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/164x100.png/5fa2dd/ffffff"
+    "imagen": "http://dummyimage.com/164x100.png/5fa2dd/ffffff",
+    "fecha": "1722501172000"
   },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$2915.30",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/111x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/111x100.png/cc0000/ffffff",
+    "fecha": "1707290140000"
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$2107.35",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/105x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/105x100.png/cc0000/ffffff",
+    "fecha": "1727612630000"
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4217.66",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/125x100.png/dddddd/000000"
+    "imagen": "http://dummyimage.com/125x100.png/dddddd/000000",
+    "fecha": "1712077628000"
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4963.36",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/227x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/227x100.png/cc0000/ffffff",
+    "fecha": "1713589985000"
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4204.33",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/171x100.png/5fa2dd/ffffff"
+    "imagen": "http://dummyimage.com/171x100.png/5fa2dd/ffffff",
+    "fecha": "1734207792000"
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$1571.10",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/173x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/173x100.png/cc0000/ffffff",
+    "fecha": "1716927245000"
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4343.78",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/202x100.png/dddddd/000000"
+    "imagen": "http://dummyimage.com/202x100.png/dddddd/000000",
+    "fecha": "1715899242000"
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4538.18",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/231x100.png/dddddd/000000"
+    "imagen": "http://dummyimage.com/231x100.png/dddddd/000000",
+    "fecha": "1721452163000"
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$3610.33",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/226x100.png/ff4444/ffffff"
+    "imagen": "http://dummyimage.com/226x100.png/ff4444/ffffff",
+    "fecha": "1718233399000"
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4686.58",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/206x100.png/ff4444/ffffff"
+    "imagen": "http://dummyimage.com/206x100.png/ff4444/ffffff",
+    "fecha": "1729584251000"
   },
   {
     "id": 28,
@@ -221,7 +248,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$2013.72",
     "categoria": "destacados",
-    "imagen": "http://dummyimage.com/179x100.png/dddddd/000000"
+    "imagen": "http://dummyimage.com/179x100.png/dddddd/000000",
+    "fecha": "1729054699000"
   },
   {
     "id": 29,
@@ -229,7 +257,8 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$4266.31",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/243x100.png/5fa2dd/ffffff"
+    "imagen": "http://dummyimage.com/243x100.png/5fa2dd/ffffff",
+    "fecha": "1731310034000"
   },
   {
     "id": 30,
@@ -237,6 +266,7 @@
     "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
     "precio": "$2017.18",
     "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/157x100.png/cc0000/ffffff"
+    "imagen": "http://dummyimage.com/157x100.png/cc0000/ffffff",
+    "fecha": "1709295315000"
   }
 ]
