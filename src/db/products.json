@@ -1,13 +1,6 @@
 [
   {
-    "id": 1,
-    "nombre": "A Blank on the Map",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "1884.32",
-    "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/151x100.png/dddddd/000000",
-    "fecha": "1732509426000",
-    "lugar": "Pondohan"
+    "id": 1
   },
   {
     "id": 2,
