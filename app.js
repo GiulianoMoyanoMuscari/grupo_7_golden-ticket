@@ -2,6 +2,7 @@
 const express = require("express");
 const path = require("path");
 const listEndpoints = require("express-list-endpoints");
+const methodOverride = require('method-override')
 
 // ************ express() - (don't touch)************
 const app = express();
@@ -14,6 +15,13 @@ app.use(express.static(pathPublic));
 // Motor de Vistas
 app.set("views", path.join(__dirname, "/src/views"));
 app.set("view engine", "ejs");
+
+// Capturar la información de un formulario en un Objeto Literal
+app.use(express.urlencoded({extended:false}));
+app.use(express.json());
+
+// Usar metodos PUT y DELETE
+app.use(methodOverride('_method'));
 
 // ************ Route System require and use() ************
 const mainRouter = require("./src/routes/main.routes"); // Require Rutas main

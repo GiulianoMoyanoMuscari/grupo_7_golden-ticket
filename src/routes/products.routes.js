@@ -11,7 +11,7 @@ router.get("/", productController.index); // todos los productos
 
 // **** CREATE ONE PRODUCT ***//
 router.get("/create", productController.create); // formulario de creacion
-router.post("/", productController.store); // acción de creación
+router.post("/create", productController.store); // acción de creación
 
 
 // **** GET ONE PRODUCTS ***//
@@ -20,11 +20,11 @@ router.get("/:id", productController.detail); // detalle de 1 producto
 
 // **** EDIT ONE PRODUCT ***//
 router.get("/:id/edit", productController.edit); // formulario de edicion
-// router.put("?", productController.?); // formulario de edicion
+router.put("/:id/edit", productController.update); // accion de edicion
 
 
 // **** DELETE ONE PRODUCT ***//
-// router.delete("/:id", productController.destroy);
+router.delete("/:id/delete", productController.destroy); // accion de borrado
 
 
 module.exports = router;

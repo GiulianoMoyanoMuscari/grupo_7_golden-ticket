@@ -21,16 +21,6 @@ const controller = {
     });
   },
 
-/*   // carrito de compra
-  cart: (req, res) => {
-    res.render("products/product-cart", { individualCss: undefined });
-  }, */
-
-  // Formulario de Compra
-/*   purchase: (req, res) => {
-    res.render("products/purchase-form", { individualCss: "purchase-form" });
-  }, */
-
   // Formulario de Creacion
   create: (req, res) => {
     res.render("products/product-create-form", { individualCss: "login" });
@@ -48,33 +38,47 @@ const controller = {
     db.create('products', newProduct)
 
 		// redireccionamos
-		res.redirect('/products')
+		res.redirect('/')
   },
 
-
-
-/*   destroy: (req, res) => {
-    db.delete("products", req.params.id);
-    res.reditect('/');
-  }, */
 
   // Formulario de Edicion
   edit: (req, res) => {
     const producto = db.readOne("products", parseInt(req.params.id));
-    db.update("products", producto.id, {
-      id: parseInt(req.params.id),
-      nombre: req.params.nombre,
-      descripcion: req.params.descripcion,
-      precio: req.params.precio,
-      categoria: req.params.categoria,
-      imagen: req.params.imagen,
-      fecha: req.params.fecha,
-    }); 
-    res.render("products/product-edit-form", {
-      individualCss: "login",
-      data: producto,
-    });
+		if(producto){
+			return res.render("products/product-edit-form", {individualCss: "login", producto});
+		} 
+		return res.send('El producto a editar no existe')
   },
+
+  update: (req, res) => {
+    // Producto a editar
+    const producto = db.readOne("products", parseInt(req.params.id));
+
+    // traemos los datos del formulario
+    const {name, price, nameStadium, date, category, /* location, */ description} = req.body
+
+    // Editamos el producto
+    db.update("products", producto.id, {
+      id: parseInt(req.params.id), // No es necesario, verdad? El id no es siempre igual?
+      nombre: name,
+      descripcion: description,
+      precio: price,
+      categoria: category,
+      /* imagen: , */ // Falta agregar imagen al formulario de edicion y creacion
+      fecha: date,
+      lugar: nameStadium
+    }); 
+
+    // redireccionamos
+    res.redirect('/products/' + req.params.id)
+  },
+
+  destroy: (req, res) => {
+    db.delete("products", req.params.id); // NO elimina de la base de datos
+    res.redirect('/');
+  },
+
 };
 
 module.exports = controller;

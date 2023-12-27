@@ -29,10 +29,14 @@
         </div>
         <a href="/products/<%= data.id %>/edit">Editar</a>
         <hr />
+        <form action="/products/<%= data.id %>/delete?_method=delete" method="POST">
+          <button type="submit" class="action-button delete">ELIMINAR</button>
+        </form>
       </section>
 
-      <!-- Seccion de precios -->
 
+
+      <!-- Seccion de precios -->
       <section class="container-prices">
         <!-- select de BOOTSTRAP -->
 

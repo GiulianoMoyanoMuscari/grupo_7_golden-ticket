@@ -241,45 +241,5 @@
     "imagen": "http://dummyimage.com/231x100.png/dddddd/000000",
     "fecha": "1721452163000",
     "lugar": "Nāḩiyat Hīrān"
-  },
-  {
-    "id": 26,
-    "nombre": "Knocked Up",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "3610.33",
-    "categoria": "destacados",
-    "imagen": "http://dummyimage.com/226x100.png/ff4444/ffffff",
-    "fecha": "1718233399000",
-    "lugar": "Villa Urquiza"
-  },
-  {
-    "id": 27,
-    "nombre": "Brother Sun, Sister Moon (Fratello sole, sorella luna)",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "4686.58",
-    "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/206x100.png/ff4444/ffffff",
-    "fecha": "1729584251000",
-    "lugar": "Buynaksk"
-  },
-  {
-    "id": 28,
-    "nombre": "Santa's Slay",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "2013.72",
-    "categoria": "destacados",
-    "imagen": "http://dummyimage.com/179x100.png/dddddd/000000",
-    "fecha": "1729054699000",
-    "lugar": "Dabu"
-  },
-  {
-    "id": 29,
-    "nombre": "Mary",
-    "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis dolor ante.",
-    "precio": "4266.31",
-    "categoria": "esta semana",
-    "imagen": "http://dummyimage.com/243x100.png/5fa2dd/ffffff",
-    "fecha": "1731310034000",
-    "lugar": "Flórina"
   }
 ]

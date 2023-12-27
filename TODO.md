@@ -7,10 +7,12 @@
   - [X] Borrado
 - [X] Agregar LUGAR para la base de datos de productos
 - [X] Mostrar productos dinámicamente en index
-- [] Mostrar boton de Editar en lista de productos
+- [] Mostrar boton de Editar en detalle de productos
 - [] Mostrar datos en formulario de edición
 - [] Mejorar el endpoint de creación de producto (redirect)
 - [] En los endpoints donde se recibe /:id hay que filtrar los id numéricos
+
+- [] Agregar un campo para subir imagen en los formularios de creacion y edicion de productos (Instalar y configurar multer), y corregir en los controladores "storage" y "update" si hiciera falta
 
 - [] Preguntar sobre el apartado PURCHASE
 
