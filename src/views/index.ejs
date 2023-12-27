@@ -42,96 +42,29 @@
         <!-- Contenedor de las cards -->
         <div class="cards-container">
           <!-- producto -->
-          <article class="product">
-            <img src="/images/losSalierisDeCharly.jpg" alt="Imagen de Show" />
-            <h3>Los Salieris de Charly</h3>
-            <div class="product-info">
-              <div class="left-info">
-                <p>Mie</p>
-                <p><span>08</span></p>
-                <p>NOV 2023</p>
+          <% listaDestacados.forEach(product => { %>
+            <article class="product">
+              <img src="<%= product.imagen %>" alt="Imagen de Show" />
+              <h3><%= product.nombre %></h3>
+              <div class="product-info">
+                <div class="left-info">
+                  <p>Mie</p>
+                  <p><span>08</span></p>
+                  <p>NOV 2023</p>
+                </div>
+                <div class="right-info">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="color: #000000"
+                    ></i>
+                    <%= product.lugar %>
+                  </p>
+                  <a href="/products/detail">Comprar</a>
+                </div>
               </div>
-              <div class="right-info">
-                <p>
-                  <i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i>
-                  Lugar del Show
-                </p>
-                <a href="/products/detail">Comprar</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- producto -->
-          <article class="product">
-            <img src="/images/losSalierisDeCharly.jpg" alt="Imagen de Show" />
-            <h3>Los Salieris de Charly</h3>
-            <div class="product-info">
-              <div class="left-info">
-                <p>Mie</p>
-                <p><span>08</span></p>
-                <p>NOV 2023</p>
-              </div>
-              <div class="right-info">
-                <p>
-                  <i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i>
-                  Lugar del Show
-                </p>
-                <a href="/products/detail">Comprar</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- producto -->
-          <article class="product">
-            <img src="/images/losSalierisDeCharly.jpg" alt="Imagen de Show" />
-            <h3>Los Salieris de Charly</h3>
-            <div class="product-info">
-              <div class="left-info">
-                <p>Mie</p>
-                <p><span>08</span></p>
-                <p>NOV 2023</p>
-              </div>
-              <div class="right-info">
-                <p>
-                  <i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i>
-                  Lugar del Show
-                </p>
-                <a href="/products/detail">Comprar</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- producto -->
-          <article class="product">
-            <img src="/images/losSalierisDeCharly.jpg" alt="Imagen de Show" />
-            <h3>Los Salieris de Charly</h3>
-            <div class="product-info">
-              <div class="left-info">
-                <p>Mie</p>
-                <p><span>08</span></p>
-                <p>NOV 2023</p>
-              </div>
-              <div class="right-info">
-                <p>
-                  <i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i>
-                  Lugar del Show
-                </p>
-                <a href="/products/detail">Comprar</a>
-              </div>
-            </div>
-          </article>
+            </article>
+          <% }) %>
         </div>
       </section>
 
@@ -143,94 +76,29 @@
         <!-- Contenedor de las cards -->
         <div class="cards-container">
           <!-- producto -->
-          <article class="product">
-            <img src="/images/daniRibba.jpg" alt="Imagen de Show" />
-            <h3>Dani Ribba</h3>
-            <div class="product-info">
-              <div class="left-info">
-                <p>Mie</p>
-                <p><span>08</span></p>
-                <p>NOV 2023</p>
+          <% listaEstaSemana.forEach(product => { %>
+            <article class="product">
+              <img src="<%= product.imagen %>" alt="Imagen de Show" />
+              <h3><%= product.nombre %></h3>
+              <div class="product-info">
+                <div class="left-info">
+                  <p>Mie</p>
+                  <p><span>08</span></p>
+                  <p>NOV 2023</p>
+                </div>
+                <div class="right-info">
+                  <p>
+                    <i
+                      class="fa-solid fa-location-dot"
+                      style="color: #000000"
+                    ></i>
+                    <%= product.lugar %>
+                  </p>
+                  <a href="/products/detail">Comprar</a>
+                </div>
               </div>
-              <div class="right-info">
-                <p>
-                  <i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i>
-                  Lugar del Show
-                </p>
-                <a href="/products/detail">Comprar</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- producto -->
-          <article class="product">
-            <img src="/images/daniRibba.jpg" alt="Imagen de Show" />
-            <h3>Dani Ribba</h3>
-            <div class="product-info">
-              <div class="left-info">
-                <p>Mie</p>
-                <p><span>08</span></p>
-                <p>NOV 2023</p>
-              </div>
-              <div class="right-info">
-                <p>
-                  <i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i>
-                  Lugar del Show
-                </p>
-                <a href="/products/detail">Comprar</a>
-              </div>
-            </div>
-          </article>
-          <!-- producto -->
-          <article class="product">
-            <img src="/images/daniRibba.jpg" alt="Imagen de Show" />
-            <h3>Dani Ribba</h3>
-            <div class="product-info">
-              <div class="left-info">
-                <p>Mie</p>
-                <p><span>08</span></p>
-                <p>NOV 2023</p>
-              </div>
-              <div class="right-info">
-                <p>
-                  <i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i>
-                  Lugar del Show
-                </p>
-                <a href="/products/detail">Comprar</a>
-              </div>
-            </div>
-          </article>
-          <!-- producto -->
-          <article class="product">
-            <img src="/images/daniRibba.jpg" alt="Imagen de Show" />
-            <h3>Dani Ribba</h3>
-            <div class="product-info">
-              <div class="left-info">
-                <p>Mie</p>
-                <p><span>08</span></p>
-                <p>NOV 2023</p>
-              </div>
-              <div class="right-info">
-                <p>
-                  <i
-                    class="fa-solid fa-location-dot"
-                    style="color: #000000"
-                  ></i>
-                  Lugar del Show
-                </p>
-                <a href="/products/detail">Comprar</a>
-              </div>
-            </div>
-          </article>
+            </article>
+          <% }) %>
         </div>
       </section>
     </main>
