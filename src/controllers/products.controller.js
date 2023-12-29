@@ -75,7 +75,7 @@ const controller = {
   },
 
   destroy: (req, res) => {
-    db.delete("products", req.params.id); // NO elimina de la base de datos
+    db.delete("products", parseInt(req.params.id)); // NO elimina de la base de datos
     res.redirect('/');
   },
 
