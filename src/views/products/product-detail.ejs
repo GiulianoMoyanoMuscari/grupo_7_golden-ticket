@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('./partials/head') %>
+  <%- include('../partials/head') %>
   <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <!------------------ Main ------------------->
     <main>
       <!-- Seccion de Informacion del Show -->
@@ -13,10 +13,10 @@
         </div>
 
         <div class="show-text">
-          <h2>Nombre Artista</h2>
+          <h2><%= data.nombre %></h2>
           <p>
             <i class="fa-solid fa-calendar-days" style="color: #000000"></i
-            >Fecha y hora del show
+            ><%= data.fecha %>
           </p>
           <p>
             <i class="fa-solid fa-location-dot" style="color: #000000"></i
@@ -27,12 +27,16 @@
             >Ubicacion del estadio/lugar
           </p>
         </div>
-
+        <a href="/products/<%= data.id %>/edit">Editar</a>
         <hr />
+        <form action="/products/<%= data.id %>/delete?_method=delete" method="POST">
+          <button type="submit" class="action-button delete">ELIMINAR</button>
+        </form>
       </section>
 
-      <!-- Seccion de precios -->
 
+
+      <!-- Seccion de precios -->
       <section class="container-prices">
         <!-- select de BOOTSTRAP -->
 
@@ -64,7 +68,7 @@
         <a href="/products/purchase" class="btn-comprar">Comprar</a>
       </section>
     </main>
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
     <!-- Bootstrap -->
 
     <script

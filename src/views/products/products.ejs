@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('./partials/head') %>
+  <%- include('../partials/head') %>
   <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <!------------------ Main ------------------->
     <main>
       <!-- Carrusel de Imagenes -->
@@ -36,13 +36,12 @@
 
       <!-- Seccion 1 -->
       <section class="product-section">
-        <h2><i class="fa-solid fa-star"></i> Destacados</h2>
-        <h4>Esto son los eventos destacados para vos</h4>
+        <h2><i class="fa-solid fa-star"></i> Todos los Shows</h2>
 
         <!-- Contenedor de las cards -->
         <div class="cards-container">
           <!-- producto -->
-          <% listaDestacados.forEach(product => { %>
+          <% list.forEach(product => { %>
             <article class="product">
               <img src="<%= product.imagen %>" alt="Imagen de Show" />
               <h3><%= product.nombre %></h3>
@@ -60,41 +59,7 @@
                     ></i>
                     <%= product.lugar %>
                   </p>
-                  <a href="/products/detail">Comprar</a>
-                </div>
-              </div>
-            </article>
-          <% }) %>
-        </div>
-      </section>
-
-      <!-- Seccion 2 -->
-      <section class="product-section">
-        <h2><i class="fa-solid fa-star"></i> Esta semana</h2>
-        <h4>Los eventos de esta semana</h4>
-
-        <!-- Contenedor de las cards -->
-        <div class="cards-container">
-          <!-- producto -->
-          <% listaEstaSemana.forEach(product => { %>
-            <article class="product">
-              <img src="<%= product.imagen %>" alt="Imagen de Show" />
-              <h3><%= product.nombre %></h3>
-              <div class="product-info">
-                <div class="left-info">
-                  <p>Mie</p>
-                  <p><span>08</span></p>
-                  <p>NOV 2023</p>
-                </div>
-                <div class="right-info">
-                  <p>
-                    <i
-                      class="fa-solid fa-location-dot"
-                      style="color: #000000"
-                    ></i>
-                    <%= product.lugar %>
-                  </p>
-                  <a href="/products/detail">Comprar</a>
+                  <a href="/products/<%= product.id %>">Comprar</a>
                 </div>
               </div>
             </article>
@@ -102,8 +67,9 @@
         </div>
       </section>
     </main>
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
     <script>
+      // Que es esto?
       document.addEventListener("DOMContentLoaded", function () {
         var splide = new Splide(".splide");
         splide.mount();

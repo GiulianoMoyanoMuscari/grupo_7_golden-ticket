@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-  <%- include('./partials/head') %>
+  <%- include('../partials/head') %>
   <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <main>
       <h1 class="title-form">Formulario de Creación</h1>
-      <form action="/" method="post">
+      <form action="/products/create" method="POST" >
         <!-- Nombre -->
         <div class="container-input">
           <label for="name">Nombre del Artista/Show</label>
@@ -21,13 +21,23 @@
         <!-- Nombre del Estadio/lugar -->
         <div class="container-input">
           <label for="text">Nombre del Estadio/lugar</label>
-          <input type="text" id="name-stadium" name="name-stadium" required />
+          <input type="text" id="nameStadium" name="name-stadium" required />
         </div>
 
         <!-- Fecha  -->
         <div class="container-input">
           <label for="date">Fecha del show</label>
           <input type="date" name="date" id="date" required />
+        </div>
+
+        <!-- Categoria  -->
+        <div class="container-input">
+          <label for="category">Categoría</label>
+          <select id="category" name="category">
+            <option selected disabled>Categoría</option>
+            <option value="Destacados">Destacados</option>
+            <option value="Esta-semana">Esta Semana</option>
+          </select>
         </div>
 
         <!-- Lugar del Show -->
@@ -65,12 +75,12 @@
         <!-- Descripcion  -->
         <div class="container-input">
           <label for="description">Agregue una Descripcion</label>
-          <textarea name="description" id="description"></textarea>
+          <textarea name="description" rows="10" id="description"></textarea>
         </div>
 
         <button class="button-form" type="submit">Agregar Show</button>
       </form>
     </main>
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
   </body>
 </html>

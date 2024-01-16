@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "nombre": "Farrel",
+    "apellido": "Springle",
+    "email": "fspringle0@nps.gov",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/103x100.png/dddddd/000000",
+    "password": "sF7@cveig&4tn"
+  },
+  {
+    "id": 2,
+    "nombre": "Gayle",
+    "apellido": "Reavell",
+    "email": "greavell1@photobucket.com",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/187x100.png/ff4444/ffffff",
+    "password": "fM5?6E(kj4FD1`"
+  },
+  {
+    "id": 3,
+    "nombre": "Mychal",
+    "apellido": "Finn",
+    "email": "mfinn2@mysql.com",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/167x100.png/5fa2dd/ffffff",
+    "password": "wI9$6A(Z(ep\\<!"
+  },
+  {
+    "id": 4,
+    "nombre": "Colet",
+    "apellido": "Hallgath",
+    "email": "challgath3@tiny.cc",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/226x100.png/cc0000/ffffff",
+    "password": "zA1{QG3nW"
+  },
+  {
+    "id": 5,
+    "nombre": "Sharon",
+    "apellido": "Ounsworth",
+    "email": "sounsworth4@jimdo.com",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/163x100.png/ff4444/ffffff",
+    "password": "qP4~wX.X{(popog"
+  },
+  {
+    "id": 6,
+    "nombre": "Bron",
+    "apellido": "Camerana",
+    "email": "bcamerana5@jiathis.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/108x100.png/cc0000/ffffff",
+    "password": "oD8*KkNW<4yi"
+  },
+  {
+    "id": 7,
+    "nombre": "Osborn",
+    "apellido": "Lohden",
+    "email": "olohden6@springer.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/119x100.png/5fa2dd/ffffff",
+    "password": "aV0<IFcnqE?mNL"
+  },
+  {
+    "id": 8,
+    "nombre": "Nara",
+    "apellido": "Beal",
+    "email": "nbeal7@nytimes.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/149x100.png/ff4444/ffffff",
+    "password": "aI7*iU\\2IY+0}>"
+  },
+  {
+    "id": 9,
+    "nombre": "Aguie",
+    "apellido": "Rosenberger",
+    "email": "arosenberger8@unc.edu",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/182x100.png/ff4444/ffffff",
+    "password": "zX1+G2}7"
+  },
+  {
+    "id": 10,
+    "nombre": "Beckie",
+    "apellido": "Ellard",
+    "email": "bellard9@dropbox.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/199x100.png/5fa2dd/ffffff",
+    "password": "fC5\"\\vt>0"
+  },
+  {
+    "id": 11,
+    "nombre": "Leoine",
+    "apellido": "Gives",
+    "email": "lgivesa@bbc.co.uk",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/160x100.png/dddddd/000000",
+    "password": "eX3_.{BQnB"
+  },
+  {
+    "id": 12,
+    "nombre": "Brendin",
+    "apellido": "Khomin",
+    "email": "bkhominb@gnu.org",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/228x100.png/5fa2dd/ffffff",
+    "password": "gF7/_m`AJO"
+  },
+  {
+    "id": 13,
+    "nombre": "Britt",
+    "apellido": "Cowndley",
+    "email": "bcowndleyc@webmd.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/178x100.png/cc0000/ffffff",
+    "password": "iX5_Z#x4k"
+  },
+  {
+    "id": 14,
+    "nombre": "Mikael",
+    "apellido": "Boshell",
+    "email": "mboshelld@marriott.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/177x100.png/ff4444/ffffff",
+    "password": "wV1)\"Sl`"
+  },
+  {
+    "id": 15,
+    "nombre": "Zared",
+    "apellido": "Sage",
+    "email": "zsagee@guardian.co.uk",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/146x100.png/dddddd/000000",
+    "password": "dC4=\\$/&*?dz"
+  },
+  {
+    "id": 16,
+    "nombre": "Billye",
+    "apellido": "Bickell",
+    "email": "bbickellf@washington.edu",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/226x100.png/dddddd/000000",
+    "password": "oD0*{rizCK4m>."
+  },
+  {
+    "id": 17,
+    "nombre": "Conchita",
+    "apellido": "McEwan",
+    "email": "cmcewang@mozilla.org",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/104x100.png/5fa2dd/ffffff",
+    "password": "mH1_kAQu9Vwc`tc8"
+  },
+  {
+    "id": 18,
+    "nombre": "Jacob",
+    "apellido": "Siegertsz",
+    "email": "jsiegertszh@angelfire.com",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/155x100.png/ff4444/ffffff",
+    "password": "rR7}NoVEWw0x)=<S"
+  },
+  {
+    "id": 19,
+    "nombre": "Evangeline",
+    "apellido": "Brager",
+    "email": "ebrageri@t.co",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/237x100.png/dddddd/000000",
+    "password": "qC5=H$&ow(cQ="
+  },
+  {
+    "id": 20,
+    "nombre": "Renate",
+    "apellido": "Higounet",
+    "email": "rhigounetj@phpbb.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/198x100.png/dddddd/000000",
+    "password": "cD8>*R<t=Kk"
+  },
+  {
+    "id": 21,
+    "nombre": "Aileen",
+    "apellido": "Dachey",
+    "email": "adacheyk@cornell.edu",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/178x100.png/5fa2dd/ffffff",
+    "password": "kC7_k`=Dbud}"
+  },
+  {
+    "id": 22,
+    "nombre": "Kessiah",
+    "apellido": "Hurtic",
+    "email": "khurticl@irs.gov",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/198x100.png/ff4444/ffffff",
+    "password": "kI1,1{L\"emD"
+  },
+  {
+    "id": 23,
+    "nombre": "Rochester",
+    "apellido": "Tweddell",
+    "email": "rtweddellm@wired.com",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/100x100.png/dddddd/000000",
+    "password": "gD5&\\L*b(r"
+  },
+  {
+    "id": 24,
+    "nombre": "Hugo",
+    "apellido": "Flux",
+    "email": "hfluxn@imdb.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/102x100.png/ff4444/ffffff",
+    "password": "xM7!>v#|<7XAl"
+  },
+  {
+    "id": 25,
+    "nombre": "Riannon",
+    "apellido": "Iacobacci",
+    "email": "riacobaccio@about.me",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/247x100.png/5fa2dd/ffffff",
+    "password": "lE9%ju>Xdl$1}c"
+  },
+  {
+    "id": 26,
+    "nombre": "Arturo",
+    "apellido": "Founds",
+    "email": "afoundsp@ameblo.jp",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/186x100.png/cc0000/ffffff",
+    "password": "nL5!&ITKJ&gCs"
+  },
+  {
+    "id": 27,
+    "nombre": "Brad",
+    "apellido": "Doohey",
+    "email": "bdooheyq@omniture.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/236x100.png/5fa2dd/ffffff",
+    "password": "pW8\\y&zJugl)nc*"
+  },
+  {
+    "id": 28,
+    "nombre": "Terrance",
+    "apellido": "Goulbourn",
+    "email": "tgoulbournr@mail.ru",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/229x100.png/ff4444/ffffff",
+    "password": "hT1$L$nm\""
+  },
+  {
+    "id": 29,
+    "nombre": "Kameko",
+    "apellido": "Picard",
+    "email": "kpicards@cbsnews.com",
+    "categoria": "cliente",
+    "imagen": "http://dummyimage.com/214x100.png/cc0000/ffffff",
+    "password": "fJ6>kv!_?"
+  },
+  {
+    "id": 30,
+    "nombre": "Rianon",
+    "apellido": "Abbis",
+    "email": "rabbist@tripod.com",
+    "categoria": "admin",
+    "imagen": "http://dummyimage.com/235x100.png/ff4444/ffffff",
+    "password": "dR2,)@X9+m6"
+  }
+]
