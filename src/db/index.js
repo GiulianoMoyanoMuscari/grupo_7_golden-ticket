@@ -39,9 +39,13 @@ module.exports = {
   },
   delete: (name, id) => {
     const data = loadData(name);
-    const index = data.findIndex(el => el.id === id)
+    const index = data.findIndex((el) => el.id === id);
     data.splice(index, 1);
-    console.log(data)
+    console.log(data);
     saveData(name, data);
+  },
+  exists: (name, entry, by) => {
+    const data = loadData(name);
+    return data.find((el) => el[by] === entry) !== undefined;
   },
 };
