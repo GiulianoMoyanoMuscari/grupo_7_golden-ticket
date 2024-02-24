@@ -14,6 +14,9 @@ module.exports = (sequelize, DataTypes) => {
     description: {
       type: DataTypes.TEXT,
     },
+    min_age:{
+      type: DataTypes.INTEGER,
+    },
     start_date: {
       type: DataTypes.DATE,
       allowNull: false,

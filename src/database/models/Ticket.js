@@ -6,6 +6,9 @@ module.exports = (sequelize, DataTypes) => {
       primaryKey: true,
       autoIncrement: true,
     },
+    buy_price: {
+      type: DataTypes.DECIMAL(10, 2),
+    },
   };
 
   const config = {
@@ -14,6 +17,16 @@ module.exports = (sequelize, DataTypes) => {
   };
 
   const Ticket = sequelize.define(alias, columns, config);
+
+  Ticket.belongsTo(sequelize.models.Event, {
+    as: "event",
+    foreignKey: "event_id",
+  });
+
+  Ticket.belongsTo(sequelize.models.User, {
+    as: "user",
+    foreignKey: "user_id",
+  });
 
   return Ticket;
 };
