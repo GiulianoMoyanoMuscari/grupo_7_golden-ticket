@@ -1,10 +1,9 @@
-// ************ Require's ************
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-// ************ Controller Require ************
-const mainController = require('../controllers/main.controller');
+const { mainController } = require("../controllers");
 
-router.get('/', mainController.index); 
+router.get("/", mainController.index);
+router.get("/cart", mainController.showCart);
 
 module.exports = router;
