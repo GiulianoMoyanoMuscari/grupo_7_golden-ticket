@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <body>
+    <!-- Head -->
+    <%- include('../partials/head') %>
+    <!-- Navigation-->
+    <%- include('../partials/navigation') %>
+    <!-- Section-->
+
+    <div class="container">
+      <h2>Create Event</h2>
+      <form method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Description:</label>
+          <textarea
+            class="form-control"
+            id="description"
+            name="description"
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="min_age">Minimum Age:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="min_age"
+            name="min_age"
+          />
+        </div>
+        <div class="form-group">
+          <label for="start_date">Start Date:</label>
+          <input
+            type="datetime-local"
+            class="form-control"
+            id="start_date"
+            name="start_date"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="expire_date">Expire Date:</label>
+          <input
+            type="datetime-local"
+            class="form-control"
+            id="expire_date"
+            name="expire_date"
+          />
+        </div>
+        <div class="form-group">
+          <label for="image">Image:</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="image"
+            name="image"
+            accept="image/*"
+          />
+        </div>
+        <div class="form-group">
+          <label for="banner">Banner:</label>
+          <input
+            type="file"
+            class="form-control-file"
+            id="banner"
+            name="banner"
+            accept="image/*"
+          />
+        </div>
+        <div class="form-group">
+          <label for="location">Location:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="location"
+            name="location"
+          />
+        </div>
+        <div class="form-group">
+          <label for="price">Price:</label>
+          <input
+            type="number"
+            step="0.01"
+            class="form-control"
+            id="price"
+            name="price"
+            value="0.00"
+          />
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity:</label>
+          <input
+            type="number"
+            class="form-control"
+            id="quantity"
+            name="quantity"
+            value="0"
+          />
+        </div>
+        <div class="form-group form-check">
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="featured"
+            name="featured"
+          />
+          <label class="form-check-label" for="featured">Featured</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <%- include('../partials/footer') %>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
