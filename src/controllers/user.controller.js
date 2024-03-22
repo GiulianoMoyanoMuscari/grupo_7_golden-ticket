@@ -22,6 +22,8 @@ const UserController = {
       const passwordMatch = await bcrypt.compare(password, user.password);
       if (!passwordMatch) throw new Error("Credenciales inválidas");
       req.session.userId = user.id;
+      console.log("Loggueando: ", user);
+      req.session.username = user.fullname;
       res.redirect("/");
     } catch (error) {
       if (error.message === "Credenciales inválidas") {
@@ -38,14 +40,20 @@ const UserController = {
   },
   // Register process
   async register(req, res) {
-    const { email, password } = req.body;
+    const { birthdate, fullname, email, password } = req.body;
     try {
       const existingUser = await db.User.findOne({ where: { email } });
       if (existingUser)
         throw new Error("El correo electrónico ya está registrado");
       const hashedPassword = await bcrypt.hash(password, 10);
-      const newUser = await db.User.create({ email, password: hashedPassword });
+      const newUser = await db.User.create({
+        birthdate,
+        email,
+        fullname,
+        password: hashedPassword,
+      });
       req.session.userId = newUser.id;
+      req.session.username = newUser.fullname;
       res.redirect("/");
     } catch (error) {
       res.render("users/register", {

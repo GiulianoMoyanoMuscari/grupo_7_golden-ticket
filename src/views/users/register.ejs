@@ -18,13 +18,13 @@
               <a href="/users/login">Inicia sesión aquí</a>
             </div>
             <div class="mb-3">
-              <label for="name" class="form-label">Nombre</label>
+              <label for="name" class="form-label">Nombre completo</label>
               <input
                 type="text"
                 class="form-control"
-                name="name"
-                id="name"
-                aria-describedby="nameHelp"
+                name="fullname"
+                id="fullname"
+                aria-describedby="fullnameHelp"
               />
             </div>
             <div class="mb-3">
@@ -46,23 +46,36 @@
                 id="password"
               />
             </div>
+            <div class="mb-3">
+              <label for="birthdate" class="form-label"
+                >Fecha de nacimiento</label
+              >
+              <input
+                type="date"
+                class="form-control"
+                name="birthdate"
+                id="birthdate"
+              />
+            </div>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="checkbox" />
               <label class="form-check-label" for="checkbox"
                 >Acepto los términos y condiciones</label
               >
             </div>
-            <button type="submit" class="btn btn-primary mb-3">Registrarse</button>
+            <button type="submit" class="btn btn-primary mb-3">
+              Registrarse
+            </button>
             <% if (locals.errors) { %> <% errors.forEach(error => { %>
-            <!-- Error Alert -->
-            <div class="alert alert-danger alert-dismissible fade show">
-              <strong>Error!</strong> <%= error.msg %>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="alert"
-              ></button>
-              <% }) %> <% } %>
+              <!-- Error Alert -->
+              <div class="alert alert-danger alert-dismissible fade show">
+                <strong>Error!</strong> <%= error.msg %>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="alert"
+                ></button>
+            <% }) %> <% } %>
           </form>
         </div>
       </div>
