@@ -88,7 +88,10 @@ const UserController = {
   // Get all users
   async getUsers(req, res) {
     try {
-      const users = await User.findAll();
+      const users = await User.findAll({
+        where: { deletedAt: null },
+        attributes: { exclude: ["password", "deletedAt"] },
+      });
       res.json(users);
     } catch (error) {
       console.error("Error getting users:", error);

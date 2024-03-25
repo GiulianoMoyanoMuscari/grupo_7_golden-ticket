@@ -1,0 +1,44 @@
+// Necesitas la extención Rest Client para poder usar este archivo desde Visual Studio Code
+// https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+
+### Configuración Global
+@base_url=http://localhost:3000
+
+### Array de eventos
+GET {{base_url}}/events HTTP/1.1
+Content-Type: application/json
+
+### Array de usuarios
+GET {{base_url}}/users HTTP/1.1
+Content-Type: application/json
+
+### Login (user pass => token)# @name login
+# @name login
+POST {{base_url}}/users/login HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+email=test@example.com&password=password
+
+###
+@authToken = {{login.response.headers.X-AuthToken}}
+
+
+### Creación de evento (sólo con token)
+POST {{base_url}}/events HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "name": "Nombre del evento",
+  "description": "Descripción del evento",
+  "min_age": 18,
+  "start_date": "2024-03-04T12:00:00Z",
+  "expire_date": "2024-03-10T23:59:59Z",
+  "image": "URL de la imagen",
+  "banner": "URL del banner",
+  "location": "Ubicación del evento",
+  "price": 29.99,
+  "quantity": 100,
+  "featured": true
+}
