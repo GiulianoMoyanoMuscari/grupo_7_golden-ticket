@@ -1,0 +1,57 @@
+// Necesitas la extención Rest Client para poder usar este archivo desde Visual Studio Code
+// https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+### Configuración Global
+@baseUrl=http://localhost:3000
+
+### Array de eventos
+# @name GetAllEvents
+GET {{baseUrl}}/events HTTP/1.1
+Content-Type: application/json
+
+### Array de usuarios
+# @name GetAllUsers
+GET {{baseUrl}}/users HTTP/1.1
+Content-Type: application/json
+
+### Registro
+# @name UserRegister
+# @prompt email E-mail
+POST {{baseUrl}}/users/register HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+fullname=prueba
+&email={{email}}
+&password=password
+&birthdate=2000-01-01
+
+### Login
+# @name UserLogin
+POST {{baseUrl}}/users/login HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+email=test@example.com
+&password=password
+
+### Creación de evento
+# @name CreateEvent
+# @prompt eventName Nombre del evento
+# @prompt eventDescription Descripción del evento
+POST {{baseUrl}}/events HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "{{eventName}}",
+  "description": "{{eventDescription}}",
+  "min_age": 18,
+  "start_date": "{{$datetime 'YYYY-MM-DD' 5 d}}",
+  "expire_date": "{{$datetime 'YYYY-MM-DD' 30 d}}",
+  "location": "Ubicación del evento",
+  "price": {{$randomInt 1000 10000 }},
+  "quantity": 100,
+  "featured": "on"
+}
+
+### Logout
+# @name Logout
+GET {{baseUrl}}/users/logout

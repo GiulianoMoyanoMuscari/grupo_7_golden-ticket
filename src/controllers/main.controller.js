@@ -1,10 +1,12 @@
+const { Event } = require("../database/models");
 const controller = {
-	index: (req, res) => {
-		res.render('index.ejs');
-	},
-	showCart: (req, res) => {
-		res.render('cart.ejs')
-	}
+  index: async (req, res) => {
+    const events = await Event.findAll();
+    res.render("index.ejs", { events });
+  },
+  showCart: (req, res) => {
+    res.render("cart.ejs");
+  },
 };
 
 module.exports = controller;

@@ -17,13 +17,13 @@ module.exports = {
         min_age,
         start_date,
         expire_date,
-        image,
-        banner,
         location,
         price,
         quantity,
         featured,
       } = req.body;
+
+      const { image, banner } = req.files || { image: null, banner: null };
 
       const event = await Event.create({
         name,
@@ -31,15 +31,15 @@ module.exports = {
         min_age,
         start_date,
         expire_date,
-        image,
-        banner,
         location,
         price,
         quantity,
-        featured,
+        image: image ? image[0].filename : "image-placeholder.jpg",
+        banner: banner ? banner[0].filename : "banner-placeholder.jpg",
+        featured: featured === "on",
       });
 
-      return res.json({ success: true, event});
+      return res.json({ success: true, event });
     } catch (error) {
       return res.json({ success: false, error: error.message });
     }

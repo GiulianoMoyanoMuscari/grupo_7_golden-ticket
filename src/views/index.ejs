@@ -13,13 +13,16 @@
         <div
           class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
         >
-          <% for( let index = 0; index < 15; index++ ) { %> <%-
-          include('./partials/card') %> <% } %>
+          <% for( let index = 0; index < events.length; index++ ) { %> 
+            <%- include('./partials/card', { event: events[index] }) %>
+          <% } %>
         </div>
       </div>
     </section>
     <%- include('./partials/footer') %>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Add to cart buttons -->
+    <script src="/scripts/save.js"></script>
   </body>
 </html>

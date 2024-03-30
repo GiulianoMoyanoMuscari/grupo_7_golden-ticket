@@ -4,12 +4,12 @@ module.exports = (sequelize, DataTypes) => {
     id: {
       type: DataTypes.INTEGER,
       primaryKey: true,
-  autoIncrement: true,
+      autoIncrement: true,
     },
-    fullname:{
+    fullname: {
       type: DataTypes.STRING,
     },
-    birthdate:{
+    birthdate: {
       type: DataTypes.DATE,
     },
     email: {
@@ -17,6 +17,10 @@ module.exports = (sequelize, DataTypes) => {
     },
     password: {
       type: DataTypes.STRING,
+    },
+    role: {
+      type: DataTypes.INTEGER,
+      defaultValue: 0,
     },
   };
 
@@ -26,6 +30,10 @@ module.exports = (sequelize, DataTypes) => {
   };
 
   const User = sequelize.define(alias, columns, config);
+
+  User.addScope("defaultScope", {
+    attributes: { exclude: ["password"] },
+  });
 
   return User;
 };

@@ -22,7 +22,6 @@ const UserController = {
       const passwordMatch = await bcrypt.compare(password, user.password);
       if (!passwordMatch) throw new Error("Credenciales inválidas");
       req.session.userId = user.id;
-      console.log("Loggueando: ", user);
       req.session.username = user.fullname;
       res.redirect("/");
     } catch (error) {
@@ -88,7 +87,10 @@ const UserController = {
   // Get all users
   async getUsers(req, res) {
     try {
-      const users = await User.findAll();
+      const users = await User.findAll({
+        where: { deletedAt: null },
+        attributes: { exclude: ["deletedAt"] },
+      });
       res.json(users);
     } catch (error) {
       console.error("Error getting users:", error);
@@ -142,6 +144,11 @@ const UserController = {
       console.error("Error deleting user:", error);
       res.json({ error: "Internal server error" });
     }
+  },
+
+  profile(req, res) {
+    const user = User.findByPk(req.session.userId);
+    res.render("users/profile", { user });
   },
 };
 
