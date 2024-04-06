@@ -1,3 +1,4 @@
+const { validationResult } = require("express-validator");
 const db = require("../database/models");
 const Event = db.Event;
 

@@ -24,6 +24,7 @@ fullname=prueba
 &email={{email}}
 &password=password
 &birthdate=2000-01-01
+&confirm=on
 
 ### Login
 # @name UserLogin

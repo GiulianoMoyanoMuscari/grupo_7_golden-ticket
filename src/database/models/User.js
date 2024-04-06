@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
     },
     birthdate: {
-      type: DataTypes.DATE,
+      type: DataTypes.DATEONLY,
     },
     email: {
       type: DataTypes.STRING,
@@ -33,6 +33,10 @@ module.exports = (sequelize, DataTypes) => {
 
   User.addScope("defaultScope", {
     attributes: { exclude: ["password"] },
+  });
+
+  User.addScope("withPassword", {
+    attributes: { include: ["password"] },
   });
 
   return User;
