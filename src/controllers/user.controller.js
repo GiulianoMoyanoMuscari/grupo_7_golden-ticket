@@ -1,3 +1,4 @@
+const { validationResult } = require("express-validator");
 const bcrypt = require("bcrypt");
 const db = require("../database/models");
 // Añadir encriptación
@@ -17,28 +18,27 @@ const UserController = {
   async login(req, res) {
     const { email, password } = req.body;
     try {
-      const user = await User.findOne({ where: { email } });
+      const user = await User.scope("withPassword").findOne({
+        where: { email },
+      });
       if (!user) throw new Error("Credenciales inválidas");
       const passwordMatch = await bcrypt.compare(password, user.password);
       if (!passwordMatch) throw new Error("Credenciales inválidas");
       req.session.userId = user.id;
       req.session.username = user.fullname;
-      res.redirect("/");
+      res.json({ success: true });
     } catch (error) {
-      if (error.message === "Credenciales inválidas") {
-        res.render("users/login", {
-          errors: [{ msg: error.message }],
-        });
-      } else {
-        console.error("Error de inicio de sesión:", error);
-        res.render("users/login", {
-          errors: [{ msg: "Error en el servidor, intente más tarde" }],
-        });
-      }
+      res.status(400).send({
+        errors: [{ msg: error.message }],
+      });
     }
   },
   // Register process
   async register(req, res) {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
     const { birthdate, fullname, email, password } = req.body;
     try {
       const existingUser = await db.User.findOne({ where: { email } });
@@ -53,9 +53,11 @@ const UserController = {
       });
       req.session.userId = newUser.id;
       req.session.username = newUser.fullname;
-      res.redirect("/");
+      res.json({
+        success: "Usuario creado con éxito",
+      });
     } catch (error) {
-      res.render("users/register", {
+      res.json({
         errors: [{ msg: error.message }],
       });
     }
@@ -64,24 +66,13 @@ const UserController = {
     req.session.destroy((error) => {
       if (error) {
         console.error("Error al cerrar sesión:", error);
-        res.send("Error interno del servidor");
+        res.json({
+          errors: [{ msg: "Error en el servidor, intente más tarde." }],
+        });
       } else {
         res.redirect("/users/login");
       }
     });
-  },
-  // Create a new user
-  async createUser(req, res) {
-    try {
-      const { email, password } = req.body;
-      const newUser = await User.create({ email, password });
-      res.json(newUser);
-    } catch (error) {
-      console.error("Error creating user:", error);
-      res.redirect("/register", {
-        errors: [{ msg: "Error en el servidor, intente más tarde" }],
-      });
-    }
   },
 
   // Get all users
@@ -147,8 +138,12 @@ const UserController = {
   },
 
   profile(req, res) {
-    const user = User.findByPk(req.session.userId);
-    res.render("users/profile", { user });
+    try {
+      const user = User.findByPk(req.session.userId);
+      res.send({ success: user });
+    } catch (error) {
+      console.log(error);
+    }
   },
 };
 

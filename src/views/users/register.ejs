@@ -1,40 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
-  <body>
-    <!-- Head -->
-    <%- include('../partials/head') %>
-    <!-- Navigation-->
-    <%- include('../partials/navigation') %>
-    <!-- Section-->
-    <section class="py-5 vh-100">
+<html lang="es" class="h-100">
+  <!-- Head -->
+  <%- include('../partials/head') %>
+  <body class="d-flex flex-column h-100">
+    <header>
+      <!-- Navigation-->
+      <%- include('../partials/navigation') %>
+    </header>
+    <!-- Main -->
+    <main class="flex-shrink-0">
       <div class="container px-4 px-lg-5 mt-5">
         <div
           class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
         >
-          <form method="POST">
+          <form>
             <h3>Crea tu cuenta</h3>
             <div class="mb-3">
               <span>¿Ya tienes una cuenta?</span>
               <a href="/users/login">Inicia sesión aquí</a>
             </div>
             <div class="mb-3">
-              <label for="name" class="form-label">Nombre completo</label>
+              <label for="fullname" class="form-label">Nombre completo</label>
               <input
                 type="text"
                 class="form-control"
                 name="fullname"
                 id="fullname"
                 aria-describedby="fullnameHelp"
+                required
               />
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Correo</label>
               <input
                 type="email"
+                autocomplete="email"
                 class="form-control"
                 name="email"
                 id="email"
                 aria-describedby="emailHelp"
+                required
               />
             </div>
             <div class="mb-3">
@@ -44,6 +49,7 @@
                 class="form-control"
                 name="password"
                 id="password"
+                required
               />
             </div>
             <div class="mb-3">
@@ -55,32 +61,61 @@
                 class="form-control"
                 name="birthdate"
                 id="birthdate"
+                required
               />
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="checkbox" />
-              <label class="form-check-label" for="checkbox"
+              <input
+                type="checkbox"
+                name="confirm"
+                class="form-check-input"
+                id="confirm"
+                required
+              />
+              <label class="form-check-label" for="confirm"
                 >Acepto los términos y condiciones</label
               >
             </div>
-            <button type="submit" class="btn btn-primary mb-3">
+            <button type="submit" id="send" class="btn btn-primary mb-3">
               Registrarse
             </button>
-            <% if (locals.errors) { %> <% errors.forEach(error => { %>
-              <!-- Error Alert -->
-              <div class="alert alert-danger alert-dismissible fade show">
-                <strong>Error!</strong> <%= error.msg %>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="alert"
-                ></button>
-            <% }) %> <% } %>
           </form>
         </div>
       </div>
-    </section>
+    </main>
+    <!-- Toasts -->
+    <div class="position-relative rounded-3">
+      <div id="toastContainer" class="toast-container p-3 bottom-0 end-0"></div>
+    </div>
     <%- include('../partials/footer') %>
+    <script>
+      window.onload = function () {
+        const form = document.querySelector("form");
+        document
+          .getElementById("birthdate")
+          .setAttribute("max", new Date().toISOString().split("T")[0]);
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const formData = new FormData(form);
+          for (var [key, value] of formData.entries()) {
+            formData[key] = value;
+          }
+          fetch("register", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.errors)
+                return data.errors.forEach((e) => showToast(e.msg, "warning"));
+              window.location = "/";
+            });
+        });
+      };
+    </script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>

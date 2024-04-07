@@ -1,24 +1,27 @@
 <!DOCTYPE html>
-<html lang="es">
-  <body>
-    <!-- Head -->
-    <%- include('./partials/head') %>
+<html lang="es" class="h-100">
+  <!-- Head -->
+  <%- include('./partials/head') %>
+  <body class="d-flex flex-column h-100">
     <!-- Navigation-->
     <%- include('./partials/navigation') %>
-    <!-- Header-->
+    <!-- Header -->
     <%- include('./partials/header') %>
-    <!-- Section-->
-    <section class="py-5">
+    <!-- Main -->
+    <main class="flex-shrink-0">
       <div class="container px-4 px-lg-5 mt-5">
         <div
           class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
         >
-          <% for( let index = 0; index < events.length; index++ ) { %> 
-            <%- include('./partials/card', { event: events[index] }) %>
-          <% } %>
+          <% for( let index = 0; index < events.length; index++ ) { %> <%-
+          include('./partials/card', { event: events[index] }) %> <% } %>
         </div>
       </div>
-    </section>
+    </main>
+    <!-- Toasts -->
+    <div class="position-relative rounded-3">
+      <div id="toastContainer" class="toast-container p-3 bottom-0 end-0"></div>
+    </div>
     <%- include('./partials/footer') %>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

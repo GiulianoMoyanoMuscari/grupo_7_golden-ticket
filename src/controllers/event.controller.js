@@ -1,3 +1,4 @@
+const { validationResult } = require("express-validator");
 const db = require("../database/models");
 const Event = db.Event;
 
@@ -10,6 +11,10 @@ module.exports = {
     res.json(events);
   },
   processCreate: async (req, res) => {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ errors: errors.array() });
+    }
     try {
       const {
         name,
@@ -25,7 +30,7 @@ module.exports = {
 
       const { image, banner } = req.files || { image: null, banner: null };
 
-      const event = await Event.create({
+      await Event.create({
         name,
         description,
         min_age,
@@ -39,18 +44,22 @@ module.exports = {
         featured: featured === "on",
       });
 
-      return res.json({ success: true, event });
+      return res.json({ success: "Evento creado con éxito" });
     } catch (error) {
-      return res.json({ success: false, error: error.message });
+      res.json({
+        errors: [{ msg: error.message }],
+      });
     }
   },
   processDelete: async (req, res) => {
     const id = req.params.id;
     try {
-      const event = await Event.delete(id);
-      res.json({ success: true, event });
+      await Event.delete(id);
+      return res.json({ success: "Evento borrado con éxito" });
     } catch (error) {
-      res.json({ success: false, message: error.message });
+      res.json({
+        errors: [{ msg: error.message }],
+      });
     }
   },
 };
