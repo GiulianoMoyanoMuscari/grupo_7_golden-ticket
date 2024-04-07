@@ -1,6 +1,42 @@
 const { body } = require("express-validator");
 const dayjs = require("dayjs");
 
+// Middleware para validar el formulario de creación de eventos
+const eventCreation = [
+  body("naem").notEmpty().withMessage("El nombre del evento es requerido"),
+  body("description")
+    .notEmpty()
+    .withMessage("El nombre del evento es requerido"),
+  body("min_age")
+    .optional()
+    .isInt()
+    .withMessage("La edad mínima debe ser un número entero"),
+  body("start_date")
+    .notEmpty()
+    .withMessage("La fecha de inicio es requerida")
+    .isISO8601()
+    .withMessage(
+      "La fecha de inicio es obligatoria y debe tener formato ISO8601"
+    ),
+  body("expire_date")
+    .notEmpty()
+    .withMessage("La fecha de expiración es requerida")
+    .isISO8601()
+    .withMessage("La fecha de expiración debe tener formato ISO8601"),
+  body("image").optional(),
+  body("banner").optional(),
+  body("location").optional(),
+  body("price")
+    .notEmpty()
+    .withMessage("El precio del evento es requerido")
+    .isDecimal()
+    .withMessage("El precio debe ser un número decimal"),
+  body("quantity")
+    .optional()
+    .isInt()
+    .withMessage("La cantidad debe ser un número entero"),
+];
+
 // Middleware para validar el formulario de registro
 const userCreation = [
   body("fullname")
@@ -37,5 +73,6 @@ const userCreation = [
 ];
 
 module.exports = {
+  eventCreation,
   userCreation,
 };

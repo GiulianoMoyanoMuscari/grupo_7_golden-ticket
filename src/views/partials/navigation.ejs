@@ -27,7 +27,7 @@
       </a>
 
       <% } %> <% if (locals.isLoggedIn) { %>
-      <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-4">
+      <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-2">
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -39,18 +39,24 @@
             ><%= locals.username %></a
           >
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/users/profile">Configuración</a></li>
+            <li>
+              <a class="dropdown-item" href="/users/profile">Configuración</a>
+            </li>
             <li><a class="dropdown-item" href="/users/logout">Salir</a></li>
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <button class="btn btn-outline-dark" type="submit">
-          <i class="fa-solid fa-cart-shopping"></i>
-          Carrito
-          <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
-        </button>
-      </form>
+      <% if (locals.isAdmin) { %>
+      <a href="/events/create" class="btn btn-outline-dark ms-lg-2">
+        <i class="fa-solid fa-plus"></i>
+        Crear evento
+      </a>
+      <% } %>
+      <a href="/cart" class="btn btn-outline-dark ms-lg-2">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Carrito
+        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+      </a>
       <% } %>
     </div>
   </div>

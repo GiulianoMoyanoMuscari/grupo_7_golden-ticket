@@ -53,11 +53,11 @@ const UserController = {
       });
       req.session.userId = newUser.id;
       req.session.username = newUser.fullname;
-      res.send({
+      res.json({
         success: "Usuario creado con éxito",
       });
     } catch (error) {
-      res.send({
+      res.json({
         errors: [{ msg: error.message }],
       });
     }
